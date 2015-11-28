@@ -1,0 +1,30 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/fel/Documents/Sobel_filter/sobel_filter.srcs/sources_1/ip/fifo_line1/fifo_line1_funcsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_line1
+INFO: [VRFC 10-311] analyzing module fifo_line1_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module fifo_line1_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module fifo_line1_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-311] analyzing module fifo_line1_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module fifo_line1_blk_mem_gen_v8_2__parameterized0
+INFO: [VRFC 10-311] analyzing module fifo_line1_blk_mem_gen_v8_2_synth
+INFO: [VRFC 10-311] analyzing module fifo_line1_compare
+INFO: [VRFC 10-311] analyzing module fifo_line1_compare_0
+INFO: [VRFC 10-311] analyzing module fifo_line1_compare_1
+INFO: [VRFC 10-311] analyzing module fifo_line1_compare_2
+INFO: [VRFC 10-311] analyzing module fifo_line1_fifo_generator_ramfifo
+INFO: [VRFC 10-311] analyzing module fifo_line1_fifo_generator_top
+INFO: [VRFC 10-311] analyzing module fifo_line1_fifo_generator_v12_0__parameterized0
+INFO: [VRFC 10-311] analyzing module fifo_line1_fifo_generator_v12_0_synth
+INFO: [VRFC 10-311] analyzing module fifo_line1_memory
+INFO: [VRFC 10-311] analyzing module fifo_line1_rd_bin_cntr
+INFO: [VRFC 10-311] analyzing module fifo_line1_rd_logic
+INFO: [VRFC 10-311] analyzing module fifo_line1_rd_status_flags_ss
+INFO: [VRFC 10-311] analyzing module fifo_line1_reset_blk_ramfifo
+INFO: [VRFC 10-311] analyzing module fifo_line1_wr_bin_cntr
+INFO: [VRFC 10-311] analyzing module fifo_line1_wr_logic
+INFO: [VRFC 10-311] analyzing module fifo_line1_wr_pf_ss
+INFO: [VRFC 10-311] analyzing module fifo_line1_wr_status_flags_ss
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/fel/Documents/Sobel_filter/sobel_filter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [/home/fel/Documents/Sobel_filter/sobel_filter.sim/sim_1/behav/glbl.v:6]
