@@ -68,7 +68,20 @@ begin
 			DATA <= "00000000";
 		elsif (rising_edge(CLK)) then
 			if(LV = '1') then
-				DATA <= std_logic_vector(unsigned(DATA)+1);
+				-- DATA <= std_logic_vector(unsigned(DATA)+1);
+				if line_count < (lines/2) then
+					if length_count < (line_width/2) then
+						DATA <= "11111111";
+					else
+						DATA <= "00000000";
+					end if;
+				else
+					if length_count < (line_width/2) then
+						DATA <= "00000000";
+					else
+						DATA <= "11111111";
+					end if;
+				end if;
 			end if;
 		end if;
 	end process;
@@ -101,3 +114,4 @@ begin
 	end process;
 
 end Behavioral;
+
