@@ -1,7 +1,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.std_logic_signed.all;
---use ieee.std_logic_unsigned.all;
+use ieee.std_logic_unsigned.all;
+use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -73,6 +74,16 @@ signal PIXEL_VALID      : std_logic;
 signal pixel_to_output  : std_logic_vector(7 downto 0);
 signal pixel_to_output_valid : std_logic;
 
+signal mask_d1          :  std_logic_vector(26 downto 0);
+signal mask_d2          :  std_logic_vector(26 downto 0);
+signal status           :  std_logic_vector(31 downto 0);
+signal control          :  std_logic_vector(31 downto 0);
+signal imgdata0         :  std_logic_vector(31 downto 0);
+signal imgdata1         :  std_logic_vector(31 downto 0);
+
+signal nrst : std_logic;
+signal dataflow_reset : std_logic;
+
 -- filter module
 component dataflow is
     Port ( clk, rst, enable: in STD_LOGIC;
@@ -139,7 +150,7 @@ component improc_controller_v1_0 is
 	);
 	port (
 		-- Users to add ports here
-        THRESHOLD     : out std_logic_vector(7 downto 0); -- Threshold
+        THRESHOLD     : out std_logic_vector(9 downto 0); -- Threshold
         HMASK         : inout std_logic_vector(26 downto 0); -- Horizontal Maskvalues
         VMASK         : inout std_logic_vector(26 downto 0); -- Vertical Maskvalues
         DMASK0        : inout std_logic_vector(26 downto 0); -- Diagonal Maskvalues0
@@ -180,6 +191,11 @@ end component;
 
 begin 
 
+
+nrst <= not rst;
+
+dataflow_reset <= rst or RESET_FIFO;
+
 axi_register_inst : improc_controller_v1_0 
   generic map(  -- Users to add parameters here
                     HPIXELS => HPIXELS,    -- Horizontal Liv
@@ -197,7 +213,7 @@ axi_register_inst : improc_controller_v1_0
                   C_S00_AXI_ADDR_WIDTH  => C_S00_AXI_ADDR_WIDTH
   )
   port map(   s00_axi_aclk	     =>  clk,
-              s00_axi_aresetn	   =>  not rst,
+              s00_axi_aresetn	   =>  nrst,
               s00_axi_awaddr	   =>  axi_awaddr	 ,
               s00_axi_awprot	   =>  axi_awprot	 ,
               s00_axi_awvalid	   =>  axi_awvalid ,
@@ -232,7 +248,7 @@ axi_register_inst : improc_controller_v1_0
 
 dataflow_inst : dataflow 
   port map( clk => clk,
-            rst => rst or RESET_FIFO,
+            rst => dataflow_reset,
             enable => enable,
             grey_data_in => PIXEL_TO_FILTER,
             threshold_in => threshold,

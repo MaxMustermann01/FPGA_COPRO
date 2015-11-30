@@ -35,6 +35,8 @@ use IEEE.NUMERIC_STD.all;
 entity dataflow is
     Port ( clk, rst, enable: in STD_LOGIC;
            grey_data_in : in STD_LOGIC_VECTOR (7 downto 0);
+           grey_data_out : out std_logic_vector (7 downto 0);
+           grey_data_out_valid : out std_logic;
            threshold_in : in STD_LOGIC_VECTOR (9 downto 0);
            mask1_in : in STD_LOGIC_VECTOR (26 downto 0);
            mask2_in : in STD_LOGIC_VECTOR (26 downto 0);
@@ -127,7 +129,7 @@ stage1_cnt: counter2 port map(clk, rst_delay, enable, fifo1_wr);
 stage2_cnt: counter2 port map(clk, rst_delay, fifo1_prog_full, fifo2_wr);
 stage3_cnt: counter2 port map(clk, rst_delay, fifo2_prog_full, regs_ready);
 
-sobel: sobel_calc port map(clk, rst_delay_n, '1', regs_ready, pixel_valid,  in_value, threshold_in, mask1_in, pixel_out );
+sobel: sobel_calc port map(clk, rst_delay_n, '1', regs_ready, grey_data_out_valid,  in_value, threshold_in, mask1_in, grey_data_out );
     
     shift_data: process (rst, clk)
     begin

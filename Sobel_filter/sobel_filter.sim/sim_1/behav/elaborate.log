@@ -1,0 +1,74 @@
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx32.o/xelab -wto bbec1d9b8cb84bdfa8550d71c295e0bf --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sobel_filter_top_behav xil_defaultlib.tb_sobel_filter_top xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.pixel_value_type
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.Camera_HIL [camera_hil_default]
+Compiling architecture arch_imp of entity xil_defaultlib.improc_controller_v1_0 [\improc_controller_v1_0(1280,720...]
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.VCC
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.fifo_line1_compare_1
+Compiling module xil_defaultlib.fifo_line1_compare_2
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.ffsrce_fdpe
+Compiling module unisims_ver.FDPE
+Compiling module xil_defaultlib.fifo_line1_rd_status_flags_ss
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.ffsrce_fdce
+Compiling module unisims_ver.FDCE
+Compiling module xil_defaultlib.fifo_line1_rd_bin_cntr
+Compiling module xil_defaultlib.fifo_line1_rd_logic
+Compiling module xil_defaultlib.fifo_line1_wr_pf_ss
+Compiling module xil_defaultlib.fifo_line1_compare
+Compiling module xil_defaultlib.fifo_line1_compare_0
+Compiling module xil_defaultlib.fifo_line1_wr_status_flags_ss
+Compiling module xil_defaultlib.fifo_line1_wr_bin_cntr
+Compiling module xil_defaultlib.fifo_line1_wr_logic
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(DOA_REG=0,DOB...
+Compiling module unisims_ver.RAMB18E1(READ_WIDTH_A=9,READ_WID...
+Compiling module xil_defaultlib.fifo_line1_blk_mem_gen_prim_wrap...
+Compiling module xil_defaultlib.fifo_line1_blk_mem_gen_prim_widt...
+Compiling module xil_defaultlib.fifo_line1_blk_mem_gen_generic_c...
+Compiling module xil_defaultlib.fifo_line1_blk_mem_gen_top
+Compiling module xil_defaultlib.fifo_line1_blk_mem_gen_v8_2_synt...
+Compiling module xil_defaultlib.fifo_line1_blk_mem_gen_v8_2__par...
+Compiling module xil_defaultlib.fifo_line1_memory
+Compiling module unisims_ver.sffsrce_fdre
+Compiling module unisims_ver.FDRE
+Compiling module xil_defaultlib.fifo_line1_reset_blk_ramfifo
+Compiling module xil_defaultlib.fifo_line1_fifo_generator_ramfif...
+Compiling module xil_defaultlib.fifo_line1_fifo_generator_top
+Compiling module xil_defaultlib.fifo_line1_fifo_generator_v12_0_...
+Compiling module xil_defaultlib.fifo_line1_fifo_generator_v12_0_...
+Compiling module xil_defaultlib.fifo_line1
+Compiling architecture behavioral of entity xil_defaultlib.counter3 [counter3_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter2 [counter2_default]
+Compiling architecture behavioral of entity xil_defaultlib.sobel_calc [sobel_calc_default]
+Compiling architecture behavioral of entity xil_defaultlib.dataflow [dataflow_default]
+Compiling architecture behavioral of entity xil_defaultlib.cam_fsm [cam_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.hdmi_fsm [\hdmi_fsm(1280,720,80,2,72,3,216...]
+Compiling architecture behavioral of entity xil_defaultlib.sobel_filter_top [\sobel_filter_top(1280,720,80,2,...]
+Compiling architecture behaviour of entity xil_defaultlib.tb_sobel_filter_top
+Waiting for 3 sub-compilation(s) to finish...
+Built simulation snapshot tb_sobel_filter_top_behav

@@ -1,3 +1,12 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.std_logic_signed.all;
+use ieee.std_logic_unsigned.all;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+use IEEE.NUMERIC_STD.ALL;
 
 
 
@@ -29,22 +38,22 @@ component sobel_filter_top is
 		C_S00_AXI_ADDR_WIDTH	: integer	:= 7
 	);
   port(  
-            axi_awaddr	  : in std_logic_vector(C_S00_AXI_ADDR_WIDTH-1 downto 0);
+            axi_awaddr	  : in std_logic_vector(7-1 downto 0);
             axi_awprot	  : in std_logic_vector(2 downto 0);
             axi_awvalid	  : in std_logic;
             axi_awready	  : out std_logic;
-            axi_wdata	    : in std_logic_vector(C_S00_AXI_DATA_WIDTH-1 downto 0);
-            axi_wstrb	    : in std_logic_vector((C_S00_AXI_DATA_WIDTH/8)-1 downto 0);
+            axi_wdata	    : in std_logic_vector(32-1 downto 0);
+            axi_wstrb	    : in std_logic_vector((32/8)-1 downto 0);
             axi_wvalid	  : in std_logic;
             axi_wready	  : out std_logic;
             axi_bresp	    : out std_logic_vector(1 downto 0);
             axi_bvalid	  : out std_logic;
             axi_bready	  : in std_logic;
-            axi_araddr	  : in std_logic_vector(C_S00_AXI_ADDR_WIDTH-1 downto 0);
+            axi_araddr	  : in std_logic_vector(7-1 downto 0);
             axi_arprot	  : in std_logic_vector(2 downto 0);
             axi_arvalid	  : in std_logic;
             axi_arready	  : out std_logic;
-            axi_rdata	    : out std_logic_vector(C_S00_AXI_DATA_WIDTH-1 downto 0);
+            axi_rdata	    : out std_logic_vector(32-1 downto 0);
             axi_rresp	    : out std_logic_vector(1 downto 0);
             axi_rvalid	  : out std_logic;
             axi_rready	  : in std_logic;
@@ -70,27 +79,28 @@ component Camera_HIL is
            DATA_OUT : out  STD_LOGIC_VECTOR (7 downto 0));
 end component;
 
-signal axi_awaddr	  : std_logic_vector(C_S00_AXI_ADDR_WIDTH-1 downto 0);
+signal axi_awaddr	  : std_logic_vector(7-1 downto 0);
 signal axi_awprot	  : std_logic_vector(2 downto 0);
 signal axi_awvalid	: std_logic;
 signal axi_awready	: std_logic;
-signal axi_wdata	  : std_logic_vector(C_S00_AXI_DATA_WIDTH-1 downto 0);
-signal axi_wstrb	  : std_logic_vector((C_S00_AXI_DATA_WIDTH/8)-1 downto 0);
+signal axi_wdata	  : std_logic_vector(32-1 downto 0);
+signal axi_wstrb	  : std_logic_vector((32/8)-1 downto 0);
 signal axi_wvalid	  : std_logic;
 signal axi_wready	  : std_logic;
 signal axi_bresp	  : std_logic_vector(1 downto 0);
 signal axi_bvalid	  : std_logic;
 signal axi_bready	  : std_logic;
-signal axi_araddr	  : std_logic_vector(C_S00_AXI_ADDR_WIDTH-1 downto 0);
+signal axi_araddr	  : std_logic_vector(7-1 downto 0);
 signal axi_arprot	  : std_logic_vector(2 downto 0);
 signal axi_arvalid	: std_logic;
 signal axi_arready	: std_logic;
-signal axi_rdata	  : std_logic_vector(C_S00_AXI_DATA_WIDTH-1 downto 0);
+signal axi_rdata	  : std_logic_vector(32-1 downto 0);
 signal axi_rresp	  : std_logic_vector(1 downto 0);
 signal axi_rvalid	  : std_logic;
 signal axi_rready	  : std_logic;
 
 signal clk          : std_logic;
+signal glob_clk     : std_logic;
 signal rst          : std_logic; 
 signal enable       : std_logic;
 signal frame_valid  : std_logic;
@@ -98,6 +108,7 @@ signal line_valid   : std_logic;
 signal pixel_in     : std_logic_vector (7 downto 0);
 signal HSYNC, VSYNC, ACTIVE : std_logic;
 signal DOUT         : std_logic_vector(23 downto 0);
+signal data_out     : std_logic_vector(7 downto 0);
 
 constant CLK_PERIOD :time := 10ns;--ns
 
@@ -126,7 +137,7 @@ camera_hil_inst : camera_hil
              PIXEL_CLK    => clk,
              LINE_VALID   => line_valid,
              FRAME_VALID  => frame_valid,
-             DATA_OUT     => data_out
+             DATA_OUT     => pixel_in
   );
 
 uut : sobel_filter_top 
