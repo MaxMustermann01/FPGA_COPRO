@@ -43,6 +43,8 @@ architecture Behavioral of Camera_HIL is
 	--Helper
 	signal line_count : integer := 0;
 	signal length_count : integer := 0;
+	signal interFrame_count : integer := 0;
+	signal interLine_count : integer := 0;
 	signal LV : STD_LOGIC;
 	signal FV : STD_LOGIC;
 	signal DATA : STD_LOGIC_VECTOR (7 downto 0);
@@ -54,6 +56,8 @@ architecture Behavioral of Camera_HIL is
 	-- Image Size
 	constant line_width : integer := 1280;
 	constant lines : integer := 720;
+	constant interFramePause : integer := 10;
+	constant interLinePause : integer := 5;
 
 begin
 
@@ -92,23 +96,31 @@ begin
 		
 		elsif (rising_edge(CLK)) then
 			if (FV = '1') then
-				if(length_count = 0) then
-				LV <= '1';
-				length_count <= length_count +1;
-				elsif (length_count = line_width +1) then --todo bed. überprüfen
-				LV <= '0';
-				length_count <= 0;
-				line_count <= line_count +1;
+				if (length_count > line_width) then
+					LV <= '0';
+					if (interLine_count = interLinePause) then
+						length_count <= 0;
+						line_count <= line_count +1;
+						interLine_count <= 0;
+					else
+						interLine_count <= interLine_count +1;
+					end if;
+				elsif(length_count = 0 and line_count /= lines) then
+					LV <= '1';
+					length_count <= length_count +1;				
 				elsif (line_count = lines) then
-				LV <= '0';
+				--LV <= '0';
 				FV <= '0';
 				line_count <= 0;
 				length_count <= 0;
 				else 
 				length_count <= length_count +1;
 				end if;
-			else
+			elsif ( interFrame_count = interFramePause ) then
 				FV <= '1';
+				interFrame_count <= 0;
+			else
+				interFrame_count <= interFrame_count +1;
 			end if;
 		end if;
 	end process;
