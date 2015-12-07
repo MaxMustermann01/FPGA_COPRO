@@ -1,0 +1,96 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin32) Build 1071353 Tue Nov 18 16:37:30 MST 2014
+| Date         : Mon Dec  7 15:06:24 2015
+| Host         : localhost.localdomain running 32-bit unknown
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7z010
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    43 |
+| Minimum Number of register sites lost to control set restrictions |   187 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             151 |           50 |
+| No           | No                    | Yes                    |             295 |           99 |
+| No           | Yes                   | No                     |              93 |           31 |
+| Yes          | No                    | No                     |               4 |            4 |
+| Yes          | No                    | Yes                    |             156 |           45 |
+| Yes          | Yes                   | No                     |              18 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|           Clock Signal          |                                               Enable Signal                                               |                                                    Set/Reset Signal                                                   | Slice Load Count | Bel Load Count |
++---------------------------------+-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  design_1_i/hdmi_rx_0/U0/CLK    |                                                                                                           | design_1_i/sobel9_0/U0/fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/n_0_ngwrdrst.grst.g7serrst.wr_rst_reg[1]_i_1 |                1 |              1 |
+|  design_1_i/hdmi_rx_0/U0/CLK    | design_1_i/sobel9_0/U0/fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d1                  |                                                                                                                       |                1 |              1 |
+|  design_1_i/hdmi_rx_0/U0/CLK    | design_1_i/sobel9_0/U0/fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d1                  |                                                                                                                       |                1 |              1 |
+|  design_1_i/hdmi_rx_0/U0/CLK    | design_1_i/sobel9_0/U0/fifo1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d1                  |                                                                                                                       |                1 |              1 |
+|  design_1_i/hdmi_rx_0/U0/CLK    | design_1_i/sobel9_0/U0/fifo1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d1                  |                                                                                                                       |                1 |              1 |
+|  design_1_i/hdmi_rx_0/U0/CLK    |                                                                                                           | design_1_i/sobel9_0/U0/fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/Q[1]                                         |                1 |              1 |
+|  design_1_i/hdmi_rx_0/U0/CLK    |                                                                                                           | design_1_i/sobel9_0/U0/fifo1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/n_0_ngwrdrst.grst.g7serrst.wr_rst_reg[1]_i_1 |                1 |              1 |
+|  design_1_i/hdmi_rx_0/U0/CLK    |                                                                                                           | design_1_i/sobel9_0/U0/fifo1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/Q[1]                                         |                1 |              1 |
+|  design_1_i/hdmi_rx_0/U0/CLK    |                                                                                                           | design_1_i/sobel9_0/U0/fifo1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/n_0_ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1 |                1 |              2 |
+|  design_1_i/hdmi_rx_0/U0/CLK    |                                                                                                           | design_1_i/sobel9_0/U0/fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rst_d2                                       |                1 |              2 |
+|  design_1_i/hdmi_rx_0/U0/CLK    |                                                                                                           | design_1_i/sobel9_0/U0/fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/n_0_ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1 |                1 |              2 |
+|  design_1_i/hdmi_rx_0/U0/CLK    |                                                                                                           | design_1_i/sobel9_0/U0/fifo1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rst_d2                                       |                1 |              2 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x |                                                                                                           | design_1_i/hdmi_rx_0/U0/GreenDecoder/PhaseAlignment/ctkn_cnt_rst                                                      |                2 |              4 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x | design_1_i/hdmi_rx_0/U0/GreenDecoder/ChannelBond/ra_en                                                    | design_1_i/hdmi_rx_0/U0/GreenDecoder/ChannelBond/O2[0]                                                                |                1 |              4 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x |                                                                                                           | design_1_i/hdmi_rx_0/U0/BlueDecoder/PhaseAlignment/ctkn_cnt_rst                                                       |                2 |              4 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x |                                                                                                           | design_1_i/hdmi_rx_0/U0/RedDecoder/PhaseAlignment/ctkn_cnt_rst                                                        |                2 |              4 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x | design_1_i/hdmi_rx_0/U0/GreenDecoder/PhaseAlignment/psinc_cnt_en                                          | design_1_i/hdmi_rx_0/U0/GreenDecoder/PhaseAlignment/n_0_psinc_cnt_en_i_2__0                                           |                3 |              4 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x | design_1_i/hdmi_rx_0/U0/BlueDecoder/PhaseAlignment/psinc_cnt_en                                           | design_1_i/hdmi_rx_0/U0/BlueDecoder/PhaseAlignment/n_0_psinc_cnt_en_i_2                                               |                2 |              4 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x | design_1_i/hdmi_rx_0/U0/RedDecoder/ChannelBond/ra_en                                                      | design_1_i/hdmi_rx_0/U0/GreenDecoder/ChannelBond/O2[0]                                                                |                1 |              4 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x | design_1_i/hdmi_rx_0/U0/RedDecoder/PhaseAlignment/psinc_cnt_en                                            | design_1_i/hdmi_rx_0/U0/RedDecoder/PhaseAlignment/n_0_psinc_cnt_en_i_2__1                                             |                2 |              4 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x | design_1_i/hdmi_rx_0/U0/BlueDecoder/ChannelBond/ra_en                                                     | design_1_i/hdmi_rx_0/U0/GreenDecoder/ChannelBond/O2[0]                                                                |                1 |              4 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x | design_1_i/hdmi_rx_0/U0/GreenDecoder/n_0_vdout[7]_i_2__0                                                  | design_1_i/hdmi_rx_0/U0/RedDecoder/ChannelBond/I7[0]                                                                  |                2 |              6 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x |                                                                                                           | design_1_i/hdmi_rx_0/U0/BlueDecoder/O1                                                                                |                4 |              6 |
+|  design_1_i/hdmi_rx_0/U0/CLK    |                                                                                                           | design_1_i/sobel9_0/U0/fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/AR[0]                                        |                3 |             13 |
+|  design_1_i/hdmi_rx_0/U0/CLK    |                                                                                                           | design_1_i/sobel9_0/U0/fifo1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/AR[0]                                        |                4 |             13 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x | design_1_i/hdmi_rx_0/U0/GreenDecoder/ChannelBond/we                                                       |                                                                                                                       |                3 |             18 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x | design_1_i/hdmi_rx_0/U0/BlueDecoder/ChannelBond/we                                                        |                                                                                                                       |                3 |             18 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x |                                                                                                           | design_1_i/hdmi_rx_0/U0/GreenDecoder/ChannelBond/O2[0]                                                                |                6 |             18 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x | design_1_i/hdmi_rx_0/U0/RedDecoder/ChannelBond/we                                                         |                                                                                                                       |                3 |             18 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x |                                                                                                           | design_1_i/hdmi_rx_0/U0/RedDecoder/PhaseAlignment/ctkn_srh_rst                                                        |                5 |             19 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x |                                                                                                           | design_1_i/hdmi_rx_0/U0/BlueDecoder/PhaseAlignment/ctkn_srh_rst                                                       |                5 |             19 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x |                                                                                                           | design_1_i/hdmi_rx_0/U0/GreenDecoder/PhaseAlignment/ctkn_srh_rst                                                      |                5 |             19 |
+|  design_1_i/hdmi_rx_0/U0/CLK    | design_1_i/sobel9_0/U0/fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0] | design_1_i/sobel9_0/U0/fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/AR[0]                                        |                4 |             22 |
+|  design_1_i/hdmi_rx_0/U0/CLK    | design_1_i/sobel9_0/U0/fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/E[0] | design_1_i/sobel9_0/U0/fifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/Q[1]                                         |                5 |             22 |
+|  design_1_i/hdmi_rx_0/U0/CLK    | design_1_i/sobel9_0/U0/fifo1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0] | design_1_i/sobel9_0/U0/fifo1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/AR[0]                                        |                5 |             22 |
+|  design_1_i/hdmi_rx_0/U0/CLK    | design_1_i/sobel9_0/U0/fifo1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/E[0] | design_1_i/sobel9_0/U0/fifo1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/Q[1]                                         |                5 |             22 |
+|  design_1_i/hdmi_rx_0/U0/CLK    |                                                                                                           |                                                                                                                       |               11 |             26 |
+|  design_1_i/hdmi_rx_0/U0/CLK    | design_1_i/hdmi_rx_0/U0/VGA_DE                                                                            | design_1_i/sobel9_0/U0/rst_dalay_cnt/AR[0]                                                                            |               19 |             56 |
+|  design_1_i/hdmi_rx_0/U0/CLK    |                                                                                                           | design_1_i/sobel9_0/U0/rst_dalay_cnt/AR[0]                                                                            |               23 |             62 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x |                                                                                                           | design_1_i/hdmi_rx_0/U0/BlueDecoder/PhaseAlignment/n_0_psinc_cnt_en_i_2                                               |               20 |             65 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x |                                                                                                           | design_1_i/hdmi_rx_0/U0/GreenDecoder/PhaseAlignment/n_0_psinc_cnt_en_i_2__0                                           |               19 |             65 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x |                                                                                                           | design_1_i/hdmi_rx_0/U0/RedDecoder/PhaseAlignment/n_0_psinc_cnt_en_i_2__1                                             |               22 |             65 |
+|  design_1_i/hdmi_rx_0/U0/clk_1x |                                                                                                           |                                                                                                                       |               39 |            125 |
++---------------------------------+-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

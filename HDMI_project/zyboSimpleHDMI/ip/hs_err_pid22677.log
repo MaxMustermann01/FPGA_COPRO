@@ -1,0 +1,14 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/opt/xilinx/Vivado/2015.4/tps/lnx64/jre/lib/amd64/server/libjvm.so(+0x90ea59) [0x7fb5320cea59]
+/opt/xilinx/Vivado/2015.4/tps/lnx64/jre/lib/amd64/server/libjvm.so(JVM_handle_linux_signal+0xb6) [0x7fb5320d4b46]
+/opt/xilinx/Vivado/2015.4/tps/lnx64/jre/lib/amd64/server/libjvm.so(+0x90b493) [0x7fb5320cb493]
+/usr/lib64/libc.so.6(+0x34a50) [0x7fb5675f9a50]
+/opt/xilinx/Vivado/2015.4/lib/lnx64.o/librdi_common.so(+0x3b43a7) [0x7fb56845b3a7]
+/opt/xilinx/Vivado/2015.4/lib/lnx64.o/librdi_common.so(HPAParamMgr::getValueAsBool(std::string const&) const+0x18) [0x7fb56845bfa8]
+/opt/xilinx/Vivado/2015.4/lib/lnx64.o/librdi_labtools.so(LTDTimer::run()+0x100) [0x7fb53943c5b0]
+/opt/xilinx/Vivado/2015.4/lib/lnx64.o/libboost_thread.so(+0x10b6a) [0x7fb5657f6b6a]
+/usr/lib64/libpthread.so.0(+0x7555) [0x7fb5670a8555]
+/usr/lib64/libc.so.6(clone+0x6d) [0x7fb5676c7b9d]

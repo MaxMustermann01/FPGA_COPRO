@@ -1,0 +1,57 @@
+{
+   guistr: "# # String gsaved with Nlview 6.4.10  2014-10-02 bk=1.3207 VDI=35 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port HDMI_CLK_P -pg 1 -y 350 -defaultsOSRD
+preplace port DDR -pg 1 -y 20 -defaultsOSRD
+preplace port BTN -pg 1 -y 270 -defaultsOSRD
+preplace port HDMI_HPD -pg 1 -y 460 -defaultsOSRD
+preplace port VGA_VS -pg 1 -y 220 -defaultsOSRD
+preplace port HDMI_OUT_EN -pg 1 -y 440 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 50 -defaultsOSRD
+preplace port VGA_HS -pg 1 -y 120 -defaultsOSRD
+preplace port HDMI_CLK_N -pg 1 -y 490 -defaultsOSRD
+preplace portBus VGA_B -pg 1 -y 420 -defaultsOSRD
+preplace portBus HDMI_D_N -pg 1 -y 530 -defaultsOSRD
+preplace portBus VGA_R -pg 1 -y 380 -defaultsOSRD
+preplace portBus HDMI_D_P -pg 1 -y 510 -defaultsOSRD
+preplace portBus VGA_G -pg 1 -y 400 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 5 -y 580 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 3 -y 250 -defaultsOSRD
+preplace inst hdmi_rx_0 -pg 1 -lvl 6 -y 520 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 2 -y 260 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 1 -y 140 -defaultsOSRD
+preplace inst sobel9_0 -pg 1 -lvl 4 -y 270 -defaultsOSRD
+preplace inst xlconstant_4 -pg 1 -lvl 1 -y 230 -defaultsOSRD
+preplace inst xlconstant_5 -pg 1 -lvl 3 -y 150 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -y 290 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 5 2 1350 230 NJ
+preplace netloc xlconstant_1_dout 1 3 1 670
+preplace netloc xlconstant_5_dout 1 3 1 680
+preplace netloc HDMI_D_P_1 1 0 6 NJ 510 NJ 510 NJ 510 NJ 520 NJ 520 1380
+preplace netloc HDMI_CLK_N_1 1 0 6 NJ 490 NJ 490 NJ 490 NJ 510 NJ 510 1400
+preplace netloc hdmi_rx_0_VGA_G 1 3 4 710 480 NJ 480 NJ 330 1720
+preplace netloc xlconstant_2_dout 1 2 2 NJ 300 660
+preplace netloc sobel4_0_rb_data_out 1 4 3 1030 460 NJ 310 1760
+preplace netloc hdmi_rx_0_HDMI_OUT_EN 1 6 1 1760
+preplace netloc sobel9_0_hsync_out 1 4 3 1040 140 NJ 140 NJ
+preplace netloc BTN_1 1 0 6 NJ 330 NJ 330 NJ 330 NJ 490 NJ 490 1420
+preplace netloc sobel9_0_g_data_out 1 4 3 1020 130 NJ 130 NJ
+preplace netloc hdmi_rx_0_VGA_DE 1 3 4 700 440 NJ 440 NJ 290 1740
+preplace netloc hdmi_rx_0_PXL_CLK 1 3 4 690 430 NJ 430 NJ 280 1750
+preplace netloc xlconstant_0_dout 1 5 1 1430
+preplace netloc processing_system7_0_FIXED_IO 1 5 2 N 240 NJ
+preplace netloc hdmi_rx_0_VGA_HS 1 3 4 680 470 NJ 470 NJ 320 1710
+preplace netloc xlconstant_4_dout 1 1 3 NJ 320 NJ 320 640
+preplace netloc hdmi_rx_0_HDMI_HPD 1 6 1 1770
+preplace netloc processing_system7_0_FCLK_CLK0 1 5 1 1400
+preplace netloc sobel9_0_vsync_out 1 4 3 1050 150 NJ 220 NJ
+preplace netloc HDMI_CLK_P_1 1 0 6 NJ 350 NJ 350 NJ 350 NJ 500 NJ 500 1410
+preplace netloc hdmi_rx_0_VGA_VS 1 3 4 720 450 NJ 450 NJ 300 1730
+preplace netloc xlconstant_3_dout 1 1 3 NJ 310 NJ 310 650
+preplace netloc HDMI_D_N_1 1 0 6 NJ 530 NJ 530 NJ 530 NJ 530 NJ 530 1360
+levelinfo -pg 1 140 230 380 530 870 1200 1570 1790
+",
+}
+{
+   da_ps7_cnt: "1",
+}

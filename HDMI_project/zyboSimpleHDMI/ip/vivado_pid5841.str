@@ -1,0 +1,2361 @@
+/*
+
+Vivado v2015.4 (64-bit)
+SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+Process ID: 5841
+
+Current time: 	12/3/15 10:55:54 AM CET
+Time zone: 	Central European Time (Europe/Berlin)
+
+OS: Fedora release 22 (Twenty Two)
+Version: 4.2.6-201.fc22.x86_64
+Architecture: amd64
+Available processors (cores): 8
+
+DISPLAY: :0.0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_45 64-bit
+Java home: 	/opt/xilinx/Vivado/2015.4/tps/lnx64/jre
+
+User name: 	kugel
+User home directory: /home/kugel
+User working directory: /home/kugel/temp/hdmi/zybo/ip
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Vivado preferences path: /home/kugel/.Xilinx/Vivado/2015.4/vivado.ini
+Vivado layouts directory: /home/kugel/.Xilinx/Vivado/2015.4/layouts
+
+GUI allocated memory:	204 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,844 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 25 MB (+24230kb) [00:00:05]
+// [Engine Memory]: 4,844 MB (+4928285kb) [00:00:05]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,849 MB. GUI used memory: 20 MB. Current time: 12/3/15 10:55:56 AM CET
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.xpr", 0); // q:v (JViewport:JComponent, cq:JFrame)
+// Opening Vivado Project: /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.xpr. Version: Vivado v2015.4 
+// bF:g (cq:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// Tcl Message: open_project /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.xpr 
+// [GUI Memory]: 28 MB (+1099kb) [00:00:10]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 46 MB (+17686kb) [00:00:10]
+// [GUI Memory]: 50 MB (+1168kb) [00:00:11]
+// [GUI Memory]: 56 MB (+4161kb) [00:00:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kugel/temp/hdmi/zybo/ip'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: hdmiPasThrough; location: /home/kugel/temp/hdmi/zybo/hdmiPasThrough; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26, true); // w:Y (v:I, cq:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // i:l (JPanel:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2015.4   **** Build date : Nov 18 2015-09:53:32     ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279574082A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 1] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// [GUI Memory]: 64 MB (+5417kb) [00:00:18]
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // i:l (JPanel:JComponent, cq:JFrame)
+selectMenuItem((HResource) null, "xc7z010_1"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aS:ag (cq:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aS:ag)
+// bF:g (cq:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aS:ag (cq:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 1] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 1] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'y' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bF:g (cq:JFrame)
+// Elapsed time: 10 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // i:l (JPanel:JComponent, cq:JFrame)
+selectMenuItem((HResource) null, "xc7z010_1"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aS:ag (cq:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aS:ag)
+// bF:g (cq:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aS:ag (cq:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 1] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 1] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'y' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bF:g (cq:JFrame)
+// Elapsed time: 47 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // i:l (JPanel:JComponent, cq:JFrame)
+selectMenuItem((HResource) null, "xc7z010_1"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aS:ag (cq:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aS:ag)
+// bF:g (cq:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aS:ag (cq:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 1] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 1] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'y' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bF:g (cq:JFrame)
+// Elapsed time: 19 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // i:l (JPanel:JComponent, cq:JFrame)
+selectMenuItem((HResource) null, "xc7z010_1"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aS:ag (cq:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // r:a (ak:JPanel, aS:ag)
+// Elapsed time: 20 seconds
+setFileChooser("/home/kugel/temp/hdmi/zybo_video_demo/source/SDK/SDK_Export/hw/system.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aS:ag)
+// bF:g (cq:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aS:ag (cq:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo_video_demo/source/SDK/SDK_Export/hw/system.bit} [lindex [get_hw_devices] 1] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 1] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 5,150 MB (+65903kb) [00:02:19]
+// 'y' command handler elapsed time: 25 seconds
+dismissDialog("Program Device"); // bF:g (cq:JFrame)
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid5841.debug)
+*/
+// HMemoryUtils.trashcanNow. Engine heap size: 5,150 MB. GUI used memory: 31 MB. Current time: 12/3/15 10:58:11 AM CET
+// Elapsed time: 686 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_IP_LOCATION, "Open Recent IP Location"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ae:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// N:x (cq:JFrame): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // h:JCheckBox (JPanel:JComponent, N:x): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, N:x)
+dismissDialog("Export Hardware"); // N:x (cq:JFrame)
+// Tcl Message: file mkdir /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.sdk 
+// Tcl Message: file copy -force /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/design_1_wrapper.sysdef /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.sdk/design_1_wrapper.hdf  
+// Elapsed time: 10 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_IP_LOCATION, "Open Recent IP Location"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ae:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// Q:x (cq:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:x)
+dismissDialog("Launch SDK"); // Q:x (cq:JFrame)
+// Tcl Message: launch_sdk -workspace /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.sdk -hwspec /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.sdk/design_1_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.sdk -hwspec /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// Elapsed time: 51 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_IP_LOCATION, "Open Recent IP Location"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ae:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// Q:x (cq:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:x)
+dismissDialog("Launch SDK"); // Q:x (cq:JFrame)
+// Tcl Message: launch_sdk -workspace /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.sdk -hwspec /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.sdk/design_1_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.sdk -hwspec /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// Elapsed time: 201 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_REFRESH_DEVICE, "Refresh device"); // i:l (JPanel:JComponent, cq:JFrame)
+selectMenuItem((HResource) null, "xc7z010_1"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_DEVICE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 1] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // l:JideButton (JPanel:JComponent, cq:JFrame)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// G:aY (cq:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:aY)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+dismissDialog("Confirm Close"); // G:aY (cq:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1); // y:k (I:JPanel, cq:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd)]", 4); // y:k (I:JPanel, cq:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), hdmi_rx_0 - design_1_hdmi_rx_0_0 (design_1_hdmi_rx_0_0.xci)]", 5); // y:k (I:JPanel, cq:JFrame)
+// G:aY (cq:JFrame): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:aY)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // G:aY (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), hdmi_rx_0 - design_1_hdmi_rx_0_0 (design_1_hdmi_rx_0_0.xci), design_1_hdmi_rx_0_0 - design_1_hdmi_rx_0_0_arch (design_1_hdmi_rx_0_0.vhd)]", 6, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), hdmi_rx_0 - design_1_hdmi_rx_0_0 (design_1_hdmi_rx_0_0.xci), design_1_hdmi_rx_0_0 - design_1_hdmi_rx_0_0_arch (design_1_hdmi_rx_0_0.vhd)]", 6, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), hdmi_rx_0 - design_1_hdmi_rx_0_0 (design_1_hdmi_rx_0_0.xci), design_1_hdmi_rx_0_0 - design_1_hdmi_rx_0_0_arch (design_1_hdmi_rx_0_0.vhd), U0 - hdmi_rx - Behavioral (hdmi_rx.vhd)]", 7); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), hdmi_rx_0 - design_1_hdmi_rx_0_0 (design_1_hdmi_rx_0_0.xci), design_1_hdmi_rx_0_0 - design_1_hdmi_rx_0_0_arch (design_1_hdmi_rx_0_0.vhd), U0 - hdmi_rx - Behavioral (hdmi_rx.vhd)]", 7, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), hdmi_rx_0 - design_1_hdmi_rx_0_0 (design_1_hdmi_rx_0_0.xci), design_1_hdmi_rx_0_0 - design_1_hdmi_rx_0_0_arch (design_1_hdmi_rx_0_0.vhd), U0 - hdmi_rx - Behavioral (hdmi_rx.vhd)]", 7, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+// [GUI Memory]: 68 MB (+559kb) [00:18:50]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bF:g (cq:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: open_bd_design {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: Adding component instance block -- user.org:user:hdmi_rx:1.0 - hdmi_rx_0 Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0 Successfully read diagram <design_1> from BD file </home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd> 
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// 'bg' command handler elapsed time: 3 seconds
+dismissDialog("Open Block Design"); // bF:g (cq:JFrame)
+// [GUI Memory]: 72 MB (+478kb) [00:19:13]
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// T:bF (cq:JFrame):  Re-customize IP : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 5,178 MB. GUI used memory: 39 MB. Current time: 12/3/15 11:15:11 AM CET
+// t:g (cq:JFrame): Re-customize IP: addNotify
+// cn:x (t:g): Configuration Presets: addNotify
+// Elapsed time: 19 seconds
+dismissDialog("Re-customize IP"); // T:bF (cq:JFrame)
+selectButton("PS-PL Configuration", "PS-PL Configuration"); // l:JideButton (cj:ButtonPanel, t:g)
+selectButton("Clock Configuration", "Clock Configuration"); // l:JideButton (cj:ButtonPanel, t:g)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 2); // A:cw (JViewport:JComponent, t:g)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks", 1); // A:cw (JViewport:JComponent, t:g)
+collapseTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks", 1); // A:cw (JViewport:JComponent, t:g)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks", 0); // A:cw (JViewport:JComponent, t:g)
+collapseTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks", 0); // A:cw (JViewport:JComponent, t:g)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks", 7); // A:cw (JViewport:JComponent, t:g)
+collapseTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks", 7); // A:cw (JViewport:JComponent, t:g)
+// [GUI Memory]: 76 MB (+529kb) [00:19:48]
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// Elapsed time: 134 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 868, 274, 1273, 632, false, false, false, true, false); // eC:aO (TdiGroup:JideTabbedPane, cq:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_port -dir O VGA_HS 
+// Tcl Message: connect_bd_net [get_bd_pins /top/hdmi_rx_0/VGA_HS] [get_bd_ports VGA_HS] 
+// Tcl Message: endgroup 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 859, 298, 1273, 632, false, false, false, true, false); // eC:aO (TdiGroup:JideTabbedPane, cq:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_port -dir O VGA_VS 
+// Tcl Message: connect_bd_net [get_bd_pins /top/hdmi_rx_0/VGA_VS] [get_bd_ports VGA_VS] 
+// Tcl Message: endgroup 
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 14); // w:Y (v:I, cq:JFrame)
+// [GUI Memory]: 82 MB (+2269kb) [00:22:21]
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 20); // w:Y (v:I, cq:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 20, true); // w:Y (v:I, cq:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bF:g (cq:JFrame):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z010clg400-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,334 MB. GUI used memory: 58 MB. Current time: 12/3/15 11:18:16 AM CET
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// [Engine Memory]: 5,419 MB (+13011kb) [00:22:28]
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 5,419 MB. GUI used memory: 58 MB. Current time: 12/3/15 11:18:18 AM CET
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 97 MB (+11485kb) [00:22:29]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Xgd.load filename: /opt/xilinx/Vivado/2015.4/data/parts/xilinx/zynq/devint/zynq/xc7z010/xc7z010.xgd; ZipEntry: xc7z010_detail.xgd elapsed time: 0.7s
+// Device: addNotify
+// Package: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2015.4 INFO: [Device 21-403] Loading part xc7z010clg400-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xdc] for cell 'design_1_i/top/processing_system7_0/inst' Finished Parsing XDC File [/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xdc] for cell 'design_1_i/top/processing_system7_0/inst' Parsing XDC File [/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/constrs_1/new/videoPins.xdc] Finished Parsing XDC File [/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/constrs_1/new/videoPins.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary:   A total of 30 instances were transformed.   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 30 instances  
+// [GUI Memory]: 102 MB (+722kb) [00:22:31]
+// 'dt' command handler elapsed time: 7 seconds
+dismissDialog("Open Synthesized Design"); // bF:g (cq:JFrame)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenuItem(RDIResource.MainWinMenuMgr_LOAD, "I/O Planning"); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// [GUI Memory]: 108 MB (+844kb) [00:22:37]
+// [Engine Memory]: 5,713 MB (+23968kb) [00:22:38]
+// RouteApi::initDelayMediator elapsed time: 6.3s
+// [GUI Memory]: 114 MB (+337kb) [00:22:38]
+// [GUI Memory]: 120 MB (+14kb) [00:22:38]
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (4) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 9); // L:aw (JViewport:JComponent, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 126, 468, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 126, 468, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 190, 323, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 190, 323, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 201, 305, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 201, 305, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 205, 294, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 205, 294, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 208, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 208, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 204, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 204, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 203, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 203, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 201, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 201, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 194, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 194, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 194, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 194, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 193, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 193, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 184, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 184, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectGraphicalView(PAResourceOtoP.PAViews_PACKAGE, -888, 2073); // A:E (JViewport:JComponent, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 184, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 184, 288, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 180, 278, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 180, 278, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 124, 171, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 124, 171, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 104, 130, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 104, 130, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 39, 44, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 39, 44, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 54, 216, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 54, 216, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 115, 200, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 115, 200, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 248, 94, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 248, 94, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 327, 2, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 327, 2, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 314, 0, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 314, 0, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 173, 4, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 173, 4, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 230, 10, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 230, 10, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 286, 22, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 286, 22, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 627, 70, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 627, 70, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - B13'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 686, 89, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - B13'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 686, 89, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - B13'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 686, 88, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - B13'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 686, 88, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - B13'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 686, 87, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - B13'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 686, 87, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - C13'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 686, 111, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - C13'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 686, 111, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'I/O Bank - I/O Bank 501'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 682, 154, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'I/O Bank - I/O Bank 501'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 682, 154, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - F12'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 672, 199, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - F12'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 672, 199, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 655, 245, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 655, 245, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - J11'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 635, 278, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - K10'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 619, 310, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - K10'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 619, 310, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'I/O Bank - I/O Bank 0'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 599, 332, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'I/O Bank - I/O Bank 0'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 599, 332, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - M9'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 583, 350, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - M9'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 583, 350, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - M8'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 565, 360, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - M8'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 565, 360, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - M8'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 563, 360, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - M8'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 563, 360, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - M8'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 563, 361, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - M8'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 563, 361, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - M10'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 608, 350, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - M10'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 608, 350, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - K14'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 721, 313, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - K14'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 721, 313, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - K16'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 778, 295, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - J18'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 842, 282, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - J18'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 842, 282, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 912, 263, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 912, 263, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 1030, 214, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 1030, 214, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 1086, 190, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 1086, 190, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 1128, 165, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 1128, 165, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 1217, 136, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 1217, 136, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 1227, 127, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 1227, 127, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 1227, 128, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 1227, 128, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 1181, 169, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 1181, 169, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 978, 190, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 978, 190, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'I/O Bank - I/O Bank 501'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 737, 194, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'I/O Bank - I/O Bank 501'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 737, 194, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - F4'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 448, 189, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - F4'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 448, 189, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 319, 141, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 319, 141, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 317, 130, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 317, 130, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 317, 122, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 317, 122, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 292, 122, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 292, 122, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 61, 75, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 61, 75, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// [GUI Memory]: 128 MB (+2066kb) [00:23:01]
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // l:JideButton (JPanel:JComponent, cq:JFrame)
+closeTask("Synthesis", "Synthesized Design", "DesignTask.NETLIST_PLANNING");
+// G:aY (cq:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:aY)
+// TclEventType: DESIGN_CLOSE
+// [GUI Memory]: 135 MB (+456kb) [00:23:03]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,834 MB. GUI used memory: 86 MB. Current time: 12/3/15 11:18:53 AM CET
+// Engine heap size: 5,834 MB. GUI used memory: 87 MB. Current time: 12/3/15 11:18:53 AM CET
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: close_design 
+dismissDialog("Confirm Close"); // G:aY (cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd>  
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[design_1]", 0, true); // k:JTree (JViewport:JComponent, cq:JFrame) - Node
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[design_1]", 0, true, false, false, false, false, true); // k:JTree (JViewport:JComponent, cq:JFrame) - Double Click - Node
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[design_1]", 0, true, false, false, false, true, false); // k:JTree (JViewport:JComponent, cq:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Sources | Refresh Hierarchy"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 19, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// G:aY (cq:JFrame): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:aY)
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // G:aY (cq:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bF:g (cq:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: VHDL Output written to : /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/hdl/design_1.vhd VHDL Output written to : /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block top/hdmi_rx_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block top/processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block top/xlconstant_0 . 
+// Tcl Message: Exporting to file /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/hdl/design_1.hwdef [Thu Dec  3 11:19:27 2015] Launched synth_1... Run output will be captured here: /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// X:G (cq:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 58 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Open Synthesized Design"); // a:JRadioButton (JPanel:JComponent, X:G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:G)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bF:g (cq:JFrame):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z010clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 5,836 MB. GUI used memory: 62 MB. Current time: 12/3/15 11:20:30 AM CET
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Package: addNotify
+// Device: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2015.4 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xdc] for cell 'design_1_i/top/processing_system7_0/inst' Finished Parsing XDC File [/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xdc] for cell 'design_1_i/top/processing_system7_0/inst' Parsing XDC File [/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/constrs_1/new/videoPins.xdc] Finished Parsing XDC File [/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/constrs_1/new/videoPins.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary:   A total of 30 instances were transformed.   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 30 instances  
+// 'dt' command handler elapsed time: 4 seconds
+dismissDialog("Open Synthesized Design"); // bF:g (cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 216, 144, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 216, 144, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 216, 158, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 216, 158, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 193, 252, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 193, 252, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 145, 422, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 145, 422, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 91, 605, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 91, 605, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 73, 629, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 73, 629, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (6) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 9); // L:aw (JViewport:JComponent, cq:JFrame)
+// RouteApi::initDelayMediator elapsed time: 6.9s
+// Package select: 'Package Pin - B5'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 485, 85, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - B5'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 485, 85, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'I/O Bank - I/O Bank 500'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 495, 28, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'I/O Bank - I/O Bank 500'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 495, 28, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "VGA_HS ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 14, (String) null, 5, false); // L:aw (JViewport:JComponent, cq:JFrame)
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports VGA_HS P19 
+// Elapsed time: 11 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "VGA_HS ; OUT ;  ;  ;  ; P19 ; true ; 34 ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 14, "default (LVCMOS18)", 8, false); // L:aw (JViewport:JComponent, cq:JFrame)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list VGA_HS]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "VGA_HS ; OUT ;  ;  ;  ; P19 ; true ; 34 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 14, "SLOW", 12, false); // L:aw (JViewport:JComponent, cq:JFrame)
+// TclEventType: SIGNAL_MODIFY
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "VGA_VS ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 15, "SLOW", 12, false); // L:aw (JViewport:JComponent, cq:JFrame)
+// Tcl Message: set_property slew FAST [get_ports [list VGA_HS]] 
+// TclEventType: SIGNAL_MODIFY
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "VGA_VS ; OUT ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; FAST ; NONE ; FP_VTT_50 ; ", 15, "default (LVCMOS18)", 8, false); // L:aw (JViewport:JComponent, cq:JFrame)
+// Tcl Message: set_property slew FAST [get_ports [list VGA_VS]] 
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list VGA_VS]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "VGA_VS ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; FAST ; NONE ; FP_VTT_50 ; ", 15, (String) null, 5, false); // L:aw (JViewport:JComponent, cq:JFrame)
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports VGA_VS R19 
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 196, 579, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 196, 579, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 175, 451, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 175, 451, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 172, 430, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 172, 430, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 165, 417, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 165, 417, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 150, 415, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 150, 415, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 137, 400, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 137, 400, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SAVE_DESIGN, "save_design"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_DESIGN
+// G:aY (cq:JFrame): Out of Date Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:aY)
+// bF:g (cq:JFrame):  Save Constraints : addNotify
+dismissDialog("Out of Date Design"); // G:aY (cq:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: save_constraints 
+dismissDialog("Save Constraints"); // bF:g (cq:JFrame)
+// Package select: 'Package Pin - T7'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 535, 473, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - T7'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 535, 473, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - T7'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 531, 473, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - T7'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 531, 473, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 514, 467, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 514, 467, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - R5'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 482, 451, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - R5'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 482, 451, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - P3'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 427, 411, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'Package Pin - P3'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 427, 411, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'I/O Port - DDR_addr[0]'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 388, 387, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'I/O Port - DDR_addr[0]'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 388, 387, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 308, 328, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 308, 328, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 272, 297, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 272, 297, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 248, 274, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 248, 274, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 218, 242, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 218, 242, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 198, 212, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 198, 212, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 177, 175, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 177, 175, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 117, 214, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 117, 214, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 35, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bF:g (cq:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: Writing placer database... Writing XDEF routing. Writing XDEF routing logical nets. Writing XDEF routing special nets. [Thu Dec  3 11:21:30 2015] Launched impl_1... Run output will be captured here: /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bF:g (cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 312, 535, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 312, 535, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'I/O Bank - I/O Bank 502'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 348, 535, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'I/O Bank - I/O Bank 502'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 348, 535, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'I/O Bank - I/O Bank 502'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 428, 597, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// Package select: 'I/O Bank - I/O Bank 502'
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 428, 597, 1278, 639); // z:aO (TdiGroup:JideTabbedPane, cq:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// X:G (cq:JFrame): Implementation Completed: addNotify
+// Elapsed time: 44 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:G)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// d:g (cq:JFrame): Close Design: addNotify
+// Elapsed time: 41 seconds
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a:JButton (JPanel:JComponent, d:g)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,850 MB. GUI used memory: 86 MB. Current time: 12/3/15 11:22:59 AM CET
+// Engine heap size: 5,850 MB. GUI used memory: 87 MB. Current time: 12/3/15 11:22:59 AM CET
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// bF:g (cq:JFrame):  Open Implemented Design : addNotify
+// Tcl Message: close_design 
+dismissDialog("Close Design"); // d:g (cq:JFrame)
+// Tcl Message: open_run impl_1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 5,850 MB. GUI used memory: 64 MB. Current time: 12/3/15 11:23:02 AM CET
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2015.4 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/kugel/temp/hdmi/zybo/ip/.Xil/Vivado-5841-pcakulap/dcp/design_1_wrapper_early.xdc] Finished Parsing XDC File [/home/kugel/temp/hdmi/zybo/ip/.Xil/Vivado-5841-pcakulap/dcp/design_1_wrapper_early.xdc] Parsing XDC File [/home/kugel/temp/hdmi/zybo/ip/.Xil/Vivado-5841-pcakulap/dcp/design_1_wrapper.xdc] Finished Parsing XDC File [/home/kugel/temp/hdmi/zybo/ip/.Xil/Vivado-5841-pcakulap/dcp/design_1_wrapper.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.19 . Memory (MB): peak = 6845.691 ; gain = 0.000 ; free physical = 4524 ; free virtual = 18636 
+// Tcl Message: Restored from archive | CPU: 0.180000 secs | Memory: 0.947563 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.19 . Memory (MB): peak = 6845.691 ; gain = 0.000 ; free physical = 4524 ; free virtual = 18636 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 28 instances were transformed.   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 28 instances  
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dt' command handler elapsed time: 46 seconds
+// Device view-level: 0.0
+// TclEventType: TIMING_SUMMARY_UPDATED
+dismissDialog("Open Implemented Design"); // bF:g (cq:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 48, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Thu Dec  3 11:23:10 2015] Launched impl_1... Run output will be captured here: /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/runme.log 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,860 MB. GUI used memory: 118 MB. Current time: 12/3/15 11:23:10 AM CET
+// RouteApi::initDelayMediator elapsed time: 7.3s
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // l:JideButton (JPanel:JComponent, cq:JFrame)
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+// G:aY (cq:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:aY)
+// TclEventType: DESIGN_CLOSE
+// [GUI Memory]: 142 MB (+907kb) [00:27:32]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,852 MB. GUI used memory: 90 MB. Current time: 12/3/15 11:23:22 AM CET
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 5,852 MB. GUI used memory: 91 MB. Current time: 12/3/15 11:23:22 AM CET
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: close_design 
+dismissDialog("Confirm Close"); // G:aY (cq:JFrame)
+// TclEventType: RUN_COMPLETED
+// X:G (cq:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 15 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, X:G)
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a:JRadioButton (JPanel:JComponent, X:G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:G)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // X:G (cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_IP_LOCATION, "Open Recent IP Location"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// N:x (cq:JFrame): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, N:x)
+// 'o' command handler elapsed time: 4 seconds
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, U:JDialog)
+dismissDialog("Export Hardware"); // N:x (cq:JFrame)
+// Tcl Message: file copy -force /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/design_1_wrapper.sysdef /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.sdk/design_1_wrapper.hdf  
+// Elapsed time: 253 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 10); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, videoPins.xdc]", 12, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, videoPins.xdc]", 12, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+// Elapsed time: 33 seconds
+selectCodeEditor("videoPins.xdc", 308, 125); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("videoPins.xdc", 308, 125, false, false, false, false, true); // bl:J (JPanel:JComponent, cq:JFrame) - Double Click
+// Elapsed time: 53 seconds
+selectCodeEditor("videoPins.xdc", 542, 371); // bl:J (JPanel:JComponent, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// Elapsed time: 53 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), hdmi_rx_0 - design_1_hdmi_rx_0_0 (design_1_hdmi_rx_0_0.xci)]", 5, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), hdmi_rx_0 - design_1_hdmi_rx_0_0 (design_1_hdmi_rx_0_0.xci)]", 5, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), hdmi_rx_0 - design_1_hdmi_rx_0_0 (design_1_hdmi_rx_0_0.xci)]", 5, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// HOptionPane Warning: ''design_1_hdmi_rx_0_0.xci' IP is part of a block design. Please use the block design<br>'design_1' to customize the IP. (Re-customize IP)'
+// 'H' command handler elapsed time: 3 seconds
+// Elapsed time: 15 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 406, 558, 1273, 632, false, false, false, true, false); // eC:aO (TdiGroup:JideTabbedPane, cq:JFrame) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Elapsed time: 28 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "sel"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // T:aw (JViewport:JComponent, ResizableWindow:JWindow)
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:selectio_wiz:5.1 top/selectio_wiz_0 
+// Tcl Message: The HP banks in device are  && local var set to 0 && devicetype is 3 
+// Tcl Message: endgroup 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// t:g (cq:JFrame): Re-customize IP: addNotify
+// Tcl Message: The HP banks in device are  && local var set to 0 && devicetype is 3 
+// Elapsed time: 13 seconds
+selectComboBox("Data Bus Direction (BUS_DIR)", "Bidirectional", 2); // bz:f (H:JPanel, t:g)
+selectComboBox("Standard (BUS_IO_STD)", "LVCMOS33", 9); // bz:f (H:JPanel, t:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clock Setup", 1); // cH:g (H:JPanel, t:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Data Bus Setup", 0); // cH:g (H:JPanel, t:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Data And Clock Delay", 2); // cH:g (H:JPanel, t:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clock Setup", 1); // cH:g (H:JPanel, t:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Data Bus Setup", 0); // cH:g (H:JPanel, t:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.BUS_DIR {BIDIR} CONFIG.BUS_IO_STD {LVCMOS33} CONFIG.SERIALIZATION_FACTOR {4} CONFIG.SELIO_INTERFACE_TYPE {NETWORKING} CONFIG.SELIO_BUS_IN_DELAY {NONE} CONFIG.SELIO_CLK_IO_STD {LVCMOS33} CONFIG.CLK_FWD_IO_STD {LVCMOS33}] [get_bd_cells top/selectio_wiz_0] 
+// Tcl Message: The HP banks in device are  && local var set to 0 && devicetype is 3 
+// Tcl Message: endgroup 
+// Elapsed time: 10 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 458, 473, 1273, 632, false, false, false, true, false); // eC:aO (TdiGroup:JideTabbedPane, cq:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_SETTINGS, "IP Settings..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_SETTINGS
+// Project Settings: addNotify
+selectTab(PAResourceOtoP.ProjectSettingsIPPage_TABBED_PANE, PAResourceOtoP.ProjectSettingsIPPage_GENERAL, "General", 0); // g:JideTabbedPane (B:aW, k:aJ)
+selectTab(PAResourceOtoP.ProjectSettingsIPPage_TABBED_PANE, PAResourceOtoP.ProjectSettingsIPPage_REPOSITORY_MANAGER, "Repository Manager", 1); // g:JideTabbedPane (B:aW, k:aJ)
+selectTab(PAResourceOtoP.ProjectSettingsIPPage_TABBED_PANE, PAResourceOtoP.ProjectSettingsIPPage_PACKAGER, "Packager", 2); // g:JideTabbedPane (B:aW, k:aJ)
+selectTab(PAResourceOtoP.ProjectSettingsIPPage_TABBED_PANE, PAResourceOtoP.ProjectSettingsIPPage_IP_CACHE, "IP Cache", 3); // g:JideTabbedPane (B:aW, k:aJ)
+dismissDialog("Project Settings"); // k:aJ (cq:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells top/selectio_wiz_0] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 351, 486, 1273, 632, false, false, false, true, false); // eC:aO (TdiGroup:JideTabbedPane, cq:JFrame) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Elapsed time: 10 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "sl"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Slice", 2, "Slice", 0, false); // T:aw (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Slice", 2, "Slice", 0, false); // T:aw (JViewport:JComponent, ResizableWindow:JWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Slice", 2); // T:aw (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Slice", 2, "Slice", 0, false, false, false, false, false, true); // T:aw (JViewport:JComponent, ResizableWindow:JWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 top/xlslice_0 
+// Tcl Message: endgroup 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// t:g (cq:JFrame): Re-customize IP: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells top/xlslice_0] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 16 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package IP..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cq:JFrame): Create and Package New IP: addNotify
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'r' command handler elapsed time: 4 seconds
+dismissDialog("Create and Package New IP"); // P:g (cq:JFrame)
+// Elapsed time: 220 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package IP..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cq:JFrame): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_SPECIFIED_DIRECTORY_CHOOSE, "Package a specified directory. Choose a directory as the source for creating a new IP Definition."); // b:a (a:H, P:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+setText(PAResourceEtoH.EditIPProjectNameChooser_PROJECT_NAME, "hdmi_tbuf", true); // ao:JTextField (JPanel:JComponent, P:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'r' command handler elapsed time: 17 seconds
+dismissDialog("Create and Package New IP"); // P:g (cq:JFrame)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DESIGN_MODE_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::infer_core -vendor user.org -library user -taxonomy /UserIP /home/kugel/temp/hdmi/zybo/ip 
+// TclEventType: PROJECT_NEW
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// bF:g (cq:JFrame):  IP Packager : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CLOSE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,859 MB. GUI used memory: 73 MB. Current time: 12/3/15 11:37:31 AM CET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name hdmi_tbuf -directory /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.tmp /home/kugel/temp/hdmi/zybo/ip/component.xml 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kugel/temp/hdmi/zybo/ip'. INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::current_core /home/kugel/temp/hdmi/zybo/ip/component.xml 
+dismissDialog("IP Packager"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// y:y (cq:JFrame): Invalid Top Module: addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 20 seconds
+dismissDialog("Invalid Top Module"); // y:y (cq:JFrame)
+closeMainWindow("hdmi_tbuf - [/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.tmp/hdmi_tbuf.xpr] - Vivado 2015.4"); // cq:JFrame
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// G:aY (cq:JFrame): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:aY)
+// bF:g (cq:JFrame):  Close Project : addNotify
+dismissDialog("Close Project"); // G:aY (cq:JFrame)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,861 MB. GUI used memory: 80 MB. Current time: 12/3/15 11:37:59 AM CET
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bF:g (cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Customize Commands"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_PROJECT_SETTINGS, "Project Settings..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SETTINGS
+// Project Settings: addNotify
+selectButton("IP", "IP"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, k:aJ)
+selectTab(PAResourceOtoP.ProjectSettingsIPPage_TABBED_PANE, PAResourceOtoP.ProjectSettingsIPPage_REPOSITORY_MANAGER, "Repository Manager", 1); // g:JideTabbedPane (B:aW, k:aJ)
+selectButton(PAResourceOtoP.ProjectSettingsIPRepositoryPanel_REFRESH_ALL, "Refresh All"); // a:JButton (H:JPanel, k:aJ)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kugel/temp/hdmi/zybo/ip'. 
+selectTab(PAResourceOtoP.ProjectSettingsIPPage_TABBED_PANE, PAResourceOtoP.ProjectSettingsIPPage_PACKAGER, "Packager", 2); // g:JideTabbedPane (B:aW, k:aJ)
+selectTab(PAResourceOtoP.ProjectSettingsIPPage_TABBED_PANE, PAResourceOtoP.ProjectSettingsIPPage_IP_CACHE, "IP Cache", 3); // g:JideTabbedPane (B:aW, k:aJ)
+selectButton("OK", "OK"); // JButton:AbstractButton (ButtonPanel:JPanel, k:aJ)
+dismissDialog("Project Settings"); // k:aJ (cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package IP..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cq:JFrame): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_SPECIFIED_DIRECTORY_CHOOSE, "Package a specified directory. Choose a directory as the source for creating a new IP Definition."); // b:a (a:H, P:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // r:a (ak:JPanel, P:g)
+setFolderChooser("/home/kugel/temp/hdmi/zybo/ip/tbuf");
+selectButton("BACK", "< Back"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// Elapsed time: 10 seconds
+setText(PAResourceEtoH.EditIPProjectNameChooser_PROJECT_NAME, "hdmi_tbuf"); // ao:JTextField (JPanel:JComponent, P:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'r' command handler elapsed time: 39 seconds
+dismissDialog("Create and Package New IP"); // P:g (cq:JFrame)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DESIGN_MODE_CHANGE
+// TclEventType: PROJECT_NEW
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// bF:g (cq:JFrame):  IP Packager : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CLOSE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,861 MB. GUI used memory: 79 MB. Current time: 12/3/15 11:39:15 AM CET
+// Tcl Message: ipx::infer_core -vendor user.org -library user -taxonomy /UserIP /home/kugel/temp/hdmi/zybo/ip/tbuf 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kugel/temp/hdmi/zybo/ip'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name hdmi_tbuf -directory /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.tmp /home/kugel/temp/hdmi/zybo/ip/tbuf/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kugel/temp/hdmi/zybo/ip'. INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// Tcl Message: ipx::current_core /home/kugel/temp/hdmi/zybo/ip/tbuf/component.xml 
+dismissDialog("IP Packager"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// bF:g (cq:JFrame):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,861 MB. GUI used memory: 83 MB. Current time: 12/3/15 11:39:31 AM CET
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bF:g (cq:JFrame)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path /home/kugel/temp/hdmi/zybo/ip 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/kugel/temp/hdmi/zybo/ip' 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 550, 463, 1273, 632, false, false, false, true, false); // eC:aO (TdiGroup:JideTabbedPane, cq:JFrame) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "tb"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "tbuf_v1_0", 1, "tbuf_v1_0", 0, false); // T:aw (JViewport:JComponent, ResizableWindow:JWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "tbuf_v1_0", 1); // T:aw (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "tbuf_v1_0", 1, "tbuf_v1_0", 0, false, false, false, false, false, true); // T:aw (JViewport:JComponent, ResizableWindow:JWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv user.org:user:tbuf:1.0 top/tbuf_0 
+// Tcl Message: endgroup 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2.5 784 555} [get_bd_cells top/tbuf_0] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets top/HDMI_SDA_I_1] 
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1039 559} [get_bd_pins top/HDMI_SDA_I] 
+// Elapsed time: 43 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 490, 477, 1273, 632, false, false, false, true, false); // eC:aO (TdiGroup:JideTabbedPane, cq:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Block Pin Properties..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // g:JideTabbedPane (JPanel:JComponent, cq:JFrame)
+selectTreeTable(PAResourceTtoZ.TclObjectTreeTable_TREETABLE, "DIR ; I", 1, "I", 1, false); // k:aw (JViewport:JComponent, cq:JFrame)
+selectTreeTable(PAResourceTtoZ.TclObjectTreeTable_TREETABLE, "DIR ; I", 1, "I", 1, false); // k:aw (JViewport:JComponent, cq:JFrame)
+expandTreeTable(PAResourceTtoZ.TclObjectTreeTable_TREETABLE, "DIR ; I", 1); // k:aw (JViewport:JComponent, cq:JFrame)
+selectTreeTable(PAResourceTtoZ.TclObjectTreeTable_TREETABLE, "DIR ; I", 1, "I", 1, false, false, false, false, false, true); // k:aw (JViewport:JComponent, cq:JFrame) - Double Click
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_pins top/HDMI_SDA_I] 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 432, 479, 1273, 632, false, false, false, true, false); // eC:aO (TdiGroup:JideTabbedPane, cq:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_port -dir IO p 
+// Tcl Message: connect_bd_net [get_bd_pins /top/tbuf_0/p] [get_bd_ports p] 
+// Tcl Message: endgroup 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 512, 479, 1273, 632, false, false, false, true, false); // eC:aO (TdiGroup:JideTabbedPane, cq:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Block Pin Properties..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTreeTable(PAResourceTtoZ.TclObjectTreeTable_TREETABLE, "NAME ; p", 5, "p", 1, false); // k:aw (JViewport:JComponent, cq:JFrame)
+selectTreeTable(PAResourceTtoZ.TclObjectTreeTable_TREETABLE, "NAME ; p", 5, "p", 1, false); // k:aw (JViewport:JComponent, cq:JFrame)
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property NAME HDMI_SDA [get_bd_pins p] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: connect_bd_net [get_bd_pins top/hdmi_rx_0/HDMI_SDA_O] [get_bd_pins top/tbuf_0/i] 
+// Tcl Message: endgroup 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins top/hdmi_rx_0/HDMI_SDA_T] [get_bd_pins top/tbuf_0/t] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins top/tbuf_0/o] [get_bd_pins top/hdmi_rx_0/HDMI_SDA_I] 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd>  
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 34 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, videoPins.xdc]", 11, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, videoPins.xdc]", 11, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+selectCodeEditor("videoPins.xdc", 347, 138); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: FILE_SET_CHANGE

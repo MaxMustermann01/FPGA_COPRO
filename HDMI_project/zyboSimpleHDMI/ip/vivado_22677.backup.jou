@@ -1,0 +1,183 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Dec  3 12:39:35 2015
+# Process ID: 22677
+# Current directory: /home/kugel/temp/hdmi/zybo/ip
+# Command line: vivado
+# Log file: /home/kugel/temp/hdmi/zybo/ip/vivado.log
+# Journal file: /home/kugel/temp/hdmi/zybo/ip/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.xpr
+open_bd_design {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_FCLK0_PERIPHERAL_CLKSRC {ARM PLL}] [get_bd_cells top/processing_system7_0]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+close_hw
+open_bd_design {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_FCLK0_PERIPHERAL_CLKSRC {IO PLL}] [get_bd_cells top/processing_system7_0]
+endgroup
+delete_bd_objs [get_bd_nets top/xlconstant_0_dout] [get_bd_cells top/xlconstant_0]
+startgroup
+create_bd_port -dir I BTN
+connect_bd_net [get_bd_pins /top/hdmi_rx_0/BTN] [get_bd_ports BTN]
+endgroup
+startgroup
+create_bd_port -dir O -from 3 -to 0 LED
+connect_bd_net [get_bd_pins /top/hdmi_rx_0/LED] [get_bd_ports LED]
+endgroup
+startgroup
+create_bd_port -dir O PXL_CLK_LOCKED
+connect_bd_net [get_bd_pins /top/hdmi_rx_0/PXL_CLK_LOCKED] [get_bd_ports PXL_CLK_LOCKED]
+endgroup
+generate_target all [get_files /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd]
+synth_design -rtl -name rtl_1
+open_bd_design {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 top/xlslice_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.DIN_WIDTH {4} CONFIG.DIN_TO {0} CONFIG.DIN_FROM {2} CONFIG.DOUT_WIDTH {3}] [get_bd_cells top/xlslice_0]
+endgroup
+set_property location {3 780 137} [get_bd_cells top/xlslice_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 top/xlconcat_0
+endgroup
+delete_bd_objs [get_bd_nets top/hdmi_rx_0_LED]
+connect_bd_net [get_bd_pins top/hdmi_rx_0/LED] [get_bd_pins top/xlslice_0/Din]
+connect_bd_net [get_bd_pins top/xlslice_0/Dout] [get_bd_pins top/xlconcat_0/In0]
+connect_bd_net [get_bd_pins top/hdmi_rx_0/PXL_CLK] [get_bd_pins top/xlconcat_0/In1]
+startgroup
+set_property -dict [list CONFIG.IN1_WIDTH.VALUE_SRC USER CONFIG.IN0_WIDTH.VALUE_SRC USER] [get_bd_cells top/xlconcat_0]
+set_property -dict [list CONFIG.IN0_WIDTH {3}] [get_bd_cells top/xlconcat_0]
+endgroup
+connect_bd_net [get_bd_pins top/LED] [get_bd_pins top/xlconcat_0/dout]
+save_bd_design
+delete_bd_objs [get_bd_nets top/hdmi_rx_0_PXL_CLK]
+connect_bd_net [get_bd_pins top/xlconcat_0/In1] [get_bd_pins top/hdmi_rx_0/PXL_CLK_LOCKED]
+delete_bd_objs [get_bd_pins top/PXL_CLK_LOCKED]
+save_bd_design
+generate_target all [get_files /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+close_design
+open_bd_design {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd}
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+open_bd_design {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout -hierarchy [get_bd_cell top]
+open_bd_design {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets top_PXL_CLK_LOCKED] [get_bd_ports PXL_CLK_LOCKED]
+save_bd_design
+generate_target all [get_files /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+place_ports BTN G15
+set_property IOSTANDARD LVCMOS33 [get_ports [list BTN]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {LED[3]} {LED[2]} {LED[1]} {LED[0]}]]
+set_property package_pin "" [get_ports [list  {LED[3]}]]
+place_ports {LED[0]} M14
+place_ports {LED[1]} M15
+place_ports {LED[2]} G14
+place_ports {LED[3]} D18
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+close_design
+reset_run impl_1 -noclean_dir 
+open_run synth_1 -name synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 2 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list design_1_i/top/processing_system7_0/inst/FCLK_CLK0 ]]
+set_property port_width 4 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {design_1_i/LED[0]} {design_1_i/LED[1]} {design_1_i/LED[2]} {design_1_i/LED[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list design_1_i/BTN ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+close_design
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'h1 [get_hw_probes design_1_i/BTN -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210279574082A}
+refresh_hw_server {localhost:3121}
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]

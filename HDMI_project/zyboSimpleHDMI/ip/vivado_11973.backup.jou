@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Dec  3 12:13:40 2015
+# Process ID: 11973
+# Current directory: /home/kugel/temp/hdmi/zybo/ip
+# Command line: vivado
+# Log file: /home/kugel/temp/hdmi/zybo/ip/vivado.log
+# Journal file: /home/kugel/temp/hdmi/zybo/ip/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.xpr
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo_video_demo/source/SDK/SDK_Export/hw/system.bit} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo_video_demo/source/SDK/SDK_Export/hw/system.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]

@@ -1,0 +1,681 @@
+/*
+
+Vivado v2015.4 (64-bit)
+SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+Process ID: 28405
+
+Current time: 	12/3/15 11:42:44 AM CET
+Time zone: 	Central European Time (Europe/Berlin)
+
+OS: Fedora release 22 (Twenty Two)
+Version: 4.2.6-201.fc22.x86_64
+Architecture: amd64
+Available processors (cores): 8
+
+DISPLAY: :0.0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_45 64-bit
+Java home: 	/opt/xilinx/Vivado/2015.4/tps/lnx64/jre
+
+User name: 	kugel
+User home directory: /home/kugel
+User working directory: /home/kugel/temp/hdmi/zybo/ip
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Vivado preferences path: /home/kugel/.Xilinx/Vivado/2015.4/vivado.ini
+Vivado layouts directory: /home/kugel/.Xilinx/Vivado/2015.4/layouts
+
+GUI allocated memory:	208 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,871 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.xpr", 0); // q:v (JViewport:JComponent, cq:JFrame)
+// Opening Vivado Project: /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.xpr. Version: Vivado v2015.4 
+// bF:g (cq:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 34 MB (+32880kb) [00:00:05]
+// [Engine Memory]: 4,855 MB (+4939684kb) [00:00:05]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// Tcl Message: open_project /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.xpr 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 52 MB (+17622kb) [00:00:06]
+// [GUI Memory]: 65 MB (+10955kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kugel/temp/hdmi/zybo/ip'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Vivado/2015.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 4,997 MB. GUI used memory: 26 MB. Current time: 12/3/15 11:42:47 AM CET
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: hdmiPasThrough; location: /home/kugel/temp/hdmi/zybo/hdmiPasThrough; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 21, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bF:g (cq:JFrame):  Starting Design Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+// TclEventType: LOAD_FEATURE
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: Adding component instance block -- user.org:user:hdmi_rx:1.0 - hdmi_rx_0 Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0 Adding component instance block -- user.org:user:tbuf:1.0 - tbuf_0 Successfully read diagram <design_1> from BD file </home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd> VHDL Output written to : /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/hdl/design_1.vhd VHDL Output written to : /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block top/hdmi_rx_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block top/processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block top/xlconstant_0 . INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_tbuf_0_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_tbuf_0_0'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_tbuf_0_0'... INFO: [BD 41-1029] Generation completed for the IP Integrator block top/tbuf_0 . 
+// Tcl Message: Exporting to file /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/hdl/design_1.hwdef [Thu Dec  3 11:42:55 2015] Launched synth_1... Run output will be captured here: /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/synth_1/runme.log [Thu Dec  3 11:42:55 2015] Launched impl_1... Run output will be captured here: /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bF:g (cq:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1); // y:k (I:JPanel, cq:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd)]", 4); // y:k (I:JPanel, cq:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), tbuf_0 - design_1_tbuf_0_0 (design_1_tbuf_0_0.xci)]", 7); // y:k (I:JPanel, cq:JFrame)
+// G:aY (cq:JFrame): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:aY)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // G:aY (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 5,069 MB. GUI used memory: 26 MB. Current time: 12/3/15 11:43:12 AM CET
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), tbuf_0 - design_1_tbuf_0_0 (design_1_tbuf_0_0.xci), design_1_tbuf_0_0 - design_1_tbuf_0_0_arch (design_1_tbuf_0_0.vhd)]", 8); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), tbuf_0 - design_1_tbuf_0_0 (design_1_tbuf_0_0.xci), design_1_tbuf_0_0 - design_1_tbuf_0_0_arch (design_1_tbuf_0_0.vhd)]", 8, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), tbuf_0 - design_1_tbuf_0_0 (design_1_tbuf_0_0.xci), design_1_tbuf_0_0 - design_1_tbuf_0_0_arch (design_1_tbuf_0_0.vhd)]", 8, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 20 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), tbuf_0 - design_1_tbuf_0_0 (design_1_tbuf_0_0.xci), design_1_tbuf_0_0 - design_1_tbuf_0_0_arch (design_1_tbuf_0_0.vhd)]", 8); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), tbuf_0 - design_1_tbuf_0_0 (design_1_tbuf_0_0.xci), design_1_tbuf_0_0 - design_1_tbuf_0_0_arch (design_1_tbuf_0_0.vhd), U0 - tbuf - a (tbuf.vhd)]", 9, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), tbuf_0 - design_1_tbuf_0_0 (design_1_tbuf_0_0.xci), design_1_tbuf_0_0 - design_1_tbuf_0_0_arch (design_1_tbuf_0_0.vhd), U0 - tbuf - a (tbuf.vhd)]", 9, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 5,106 MB. GUI used memory: 28 MB. Current time: 12/3/15 11:43:37 AM CET
+// [Engine Memory]: 5,106 MB (+8464kb) [00:01:00]
+// TclEventType: RUN_STEP_COMPLETED
+// ak:a (cq:JFrame): Launch Run Critical Messages: addNotify
+// TclEventType: RUN_FAILED
+// Elapsed time: 15 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a:JButton (JPanel:JComponent, ak:a)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Launch Run Critical Messages"); // ak:a (cq:JFrame)
+// X:G (cq:JFrame): Implementation Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:G)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // X:G (cq:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 11); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, videoPins.xdc]", 13, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, videoPins.xdc]", 13, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+selectCodeEditor("videoPins.xdc", 745, 218); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Sources | Refresh Hierarchy"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd)]", 3, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd)]", 3, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd)]", 2, true); // y:k (I:JPanel, cq:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd)]", 3); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd)]", 4, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd)]", 4, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+// [GUI Memory]: 73 MB (+4576kb) [00:02:22]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd)]", 4, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd)]", 4, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Sources | Refresh Hierarchy"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd)]", 3, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd)]", 3, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Sources | Refresh Hierarchy"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd)]", 2, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd)]", 2, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a:x (cq:JFrame): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:x)
+dismissDialog("Create HDL Wrapper"); // a:x (cq:JFrame)
+// Tcl Message: make_wrapper -files [get_files /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd] -top 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd)]", 2, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd)]", 2, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+// bF:g (cq:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 78 MB (+1451kb) [00:03:14]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: open_bd_design {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: Adding component instance block -- user.org:user:hdmi_rx:1.0 - hdmi_rx_0 Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0 Adding component instance block -- user.org:user:tbuf:1.0 - tbuf_0 Successfully read diagram <design_1> from BD file </home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd> 
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+dismissDialog("Open Block Design"); // bF:g (cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,130 MB. GUI used memory: 36 MB. Current time: 12/3/15 11:45:57 AM CET
+// Elapsed time: 16 seconds
+closeView(PAResourceOtoP.PAViews_SYSTEM, "System"); // eC:aO
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+collapseTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[design_1, top]", 5); // k:JTree (JViewport:JComponent, cq:JFrame)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Sources | Refresh Hierarchy"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+selectCodeEditor("design_1_wrapper.vhd", 98, 276); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("design_1_wrapper.vhd", 101, 122); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("design_1_wrapper.vhd", 117, 441); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd)]", 2, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd)]", 2, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+// bF:g (cq:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd} 
+dismissDialog("Open Block Design"); // bF:g (cq:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd)]", 2); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd)]", 3, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd)]", 3, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+selectCodeEditor("design_1.vhd", 129, 227); // F:bl (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd)]", 3); // y:k (I:JPanel, cq:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd)]", 4); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd)]", 4, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd)]", 4, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd)]", 4); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd)]", 4, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd)]", 4, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Sources | Refresh Hierarchy"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), hdmi_rx_0 - design_1_hdmi_rx_0_0 (design_1_hdmi_rx_0_0.xci)]", 5, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), hdmi_rx_0 - design_1_hdmi_rx_0_0 (design_1_hdmi_rx_0_0.xci)]", 5, false, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Source Node Properties..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), hdmi_rx_0 - design_1_hdmi_rx_0_0 (design_1_hdmi_rx_0_0.xci)]", 5, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd), hdmi_rx_0 - design_1_hdmi_rx_0_0 (design_1_hdmi_rx_0_0.xci)]", 5, false, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE, "Re-customize IP..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// HOptionPane Warning: ''design_1_hdmi_rx_0_0.xci' IP is part of a block design. Please use the block design<br>'design_1' to customize the IP. (Re-customize IP)'
+selectButton("OptionPane.button", "OK"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd), design_1_i - design_1 (design_1.bd), design_1 - STRUCTURE (design_1.vhd), top - top_imp_14UN3RY - STRUCTURE (design_1.vhd)]", 4, true); // y:k (I:JPanel, cq:JFrame) - Node
+// [GUI Memory]: 84 MB (+1860kb) [00:05:10]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bF:g (cq:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd} 
+dismissDialog("Open Block Design"); // bF:g (cq:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets HDMI_SDA_I_1] [get_bd_ports HDMI_SDA_I] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 31 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1116, 399, 1273, 632, false, false, false, true, false); // eC:aO (TdiGroup:JideTabbedPane, cq:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "External Port Properties..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "HDMI_SDA", true); // ao:JTextField (JPanel:JComponent, cq:JFrame)
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name HDMI_SDA [get_bd_ports p] 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd>  
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bF:g (cq:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: VHDL Output written to : /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/hdl/design_1.vhd VHDL Output written to : /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block top/hdmi_rx_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block top/processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block top/xlconstant_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block top/tbuf_0 . 
+// Tcl Message: Exporting to file /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/hdl/design_1.hwdef [Thu Dec  3 11:48:40 2015] Launched synth_1... Run output will be captured here: /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cq:JFrame)
+closeView(PAResourceOtoP.PAViews_SYSTEM, "System"); // eC:aO
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper - STRUCTURE (design_1_wrapper.vhd)]", 1, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+// [GUI Memory]: 88 MB (+500kb) [00:06:20]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// X:G (cq:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 47 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:G)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bF:g (cq:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Dec  3 11:49:49 2015] Launched impl_1... Run output will be captured here: /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bF:g (cq:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 346 seconds
+selectCodeEditor("design_1_wrapper.vhd", 984, 155); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: RUN_COMPLETED
+// X:G (cq:JFrame): Implementation Completed: addNotify
+// Elapsed time: 118 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a:JRadioButton (JPanel:JComponent, X:G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:G)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // X:G (cq:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// bF:g (cq:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Dec  3 11:57:37 2015] Launched impl_1... Run output will be captured here: /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bF:g (cq:JFrame)
+// Elapsed time: 74 seconds
+selectCodeEditor("design_1_wrapper.vhd", 1034, 82); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 85 seconds
+selectCodeEditor("design_1_wrapper.vhd", 707, 376); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: RUN_COMPLETED
+// X:G (cq:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 146 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, X:G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:G)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Bitstream Generation Completed"); // X:G (cq:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // i:l (JPanel:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2015.4   **** Build date : Nov 18 2015-09:53:32     ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279574082A 
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo_video_demo/source/SDK/SDK_Export/hw/system.bit} [lindex [get_hw_devices] 1] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,180 MB. GUI used memory: 41 MB. Current time: 12/3/15 12:02:52 PM CET
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // i:l (JPanel:JComponent, cq:JFrame)
+selectMenuItem((HResource) null, "xc7z010_1"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aS:ag (cq:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aS:ag)
+// bF:g (cq:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aS:ag (cq:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/kugel/temp/hdmi/zybo_video_demo/source/SDK/SDK_Export/hw/system.bit} [lindex [get_hw_devices] 1] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 1] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'y' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bF:g (cq:JFrame)
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+// [GUI Memory]: 96 MB (+2910kb) [00:21:30]
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+// [GUI Memory]: 101 MB (+155kb) [00:22:52]
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+// Elapsed time: 162 seconds
+closeMainWindow("hdmiPasThrough - [/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.xpr] - Vivado 2015.4"); // cq:JFrame
+// G:aY (cq:JFrame): Exit Vivado: addNotify
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+// [GUI Memory]: 106 MB (+319kb) [00:23:09]
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+dismissDialog("Exit Vivado"); // G:aY (cq:JFrame)
+closeMainWindow("hdmiPasThrough - [/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.xpr] - Vivado 2015.4"); // cq:JFrame
+// G:aY (cq:JFrame): Exit Vivado: addNotify
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, G:aY)
+// [GUI Memory]: 114 MB (+3179kb) [00:23:14]
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+dismissDialog("Exit Vivado"); // G:aY (cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/
+/*
+java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/kugel/temp/hdmi/zybo/ip/vivado_pid28405.debug)
+*/

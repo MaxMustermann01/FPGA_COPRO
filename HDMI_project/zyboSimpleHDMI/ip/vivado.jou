@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Dec  3 15:11:52 2015
+# Process ID: 26045
+# Current directory: /home/kugel/temp/hdmi/zybo/ip
+# Command line: vivado
+# Log file: /home/kugel/temp/hdmi/zybo/ip/vivado.log
+# Journal file: /home/kugel/temp/hdmi/zybo/ip/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.xpr
+open_bd_design {/home/kugel/temp/hdmi/zybo/hdmiPasThrough/hdmiPasThrough.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 top/axi_gpio_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "btns_4bits ( btns_4bits ) " }  [get_bd_intf_pins top/axi_gpio_0/GPIO]
+undo
+undo
+redo
+set_property location {3 681 192} [get_bd_cells top/axi_gpio_0]
+startgroup
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {1} CONFIG.PCW_EN_CLK0_PORT {1}] [get_bd_cells top/processing_system7_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/top/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins top/axi_gpio_0/S_AXI]
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {5} CONFIG.C_IS_DUAL {0} CONFIG.C_ALL_INPUTS {1}] [get_bd_cells top/axi_gpio_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {4}] [get_bd_cells top/axi_gpio_0]
+endgroup
+connect_bd_net [get_bd_pins top/axi_gpio_0/gpio_io_i] [get_bd_pins top/xlconcat_0/dout]
+save_bd_design
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_run impl_1
+close_design
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
