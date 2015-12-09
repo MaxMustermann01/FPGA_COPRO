@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: user.org:user:sobel9:1.0
--- IP Revision: 1
+-- IP Revision: 2
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -69,7 +69,6 @@ ENTITY design_1_sobel9_0_0 IS
     threshold_in : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
     mask1_in : IN STD_LOGIC_VECTOR(26 DOWNTO 0);
     mask2_in : IN STD_LOGIC_VECTOR(26 DOWNTO 0);
-    delay : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
     ready : OUT STD_LOGIC
   );
 END design_1_sobel9_0_0;
@@ -79,6 +78,9 @@ ARCHITECTURE design_1_sobel9_0_0_arch OF design_1_sobel9_0_0 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF design_1_sobel9_0_0_arch: ARCHITECTURE IS "yes";
 
   COMPONENT dataflow IS
+    GENERIC (
+      DELAY : INTEGER
+    );
     PORT (
       clk : IN STD_LOGIC;
       rst : IN STD_LOGIC;
@@ -94,7 +96,6 @@ ARCHITECTURE design_1_sobel9_0_0_arch OF design_1_sobel9_0_0 IS
       threshold_in : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
       mask1_in : IN STD_LOGIC_VECTOR(26 DOWNTO 0);
       mask2_in : IN STD_LOGIC_VECTOR(26 DOWNTO 0);
-      delay : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
       ready : OUT STD_LOGIC
     );
   END COMPONENT dataflow;
@@ -106,6 +107,9 @@ ARCHITECTURE design_1_sobel9_0_0_arch OF design_1_sobel9_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 signal_clock CLK";
 BEGIN
   U0 : dataflow
+    GENERIC MAP (
+      DELAY => 2750
+    )
     PORT MAP (
       clk => clk,
       rst => rst,
@@ -121,7 +125,6 @@ BEGIN
       threshold_in => threshold_in,
       mask1_in => mask1_in,
       mask2_in => mask2_in,
-      delay => delay,
       ready => ready
     );
 END design_1_sobel9_0_0_arch;

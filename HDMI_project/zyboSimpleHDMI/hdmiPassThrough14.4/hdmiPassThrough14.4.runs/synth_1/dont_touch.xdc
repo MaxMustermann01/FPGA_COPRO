@@ -24,9 +24,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_xlcons
 # IP: bd/design_1/ip/design_1_xlconstant_3_0/design_1_xlconstant_3_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_xlconstant_3_0 || ORIG_REF_NAME==design_1_xlconstant_3_0}]
 
-# IP: bd/design_1/ip/design_1_xlconstant_4_0/design_1_xlconstant_4_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_xlconstant_4_0 || ORIG_REF_NAME==design_1_xlconstant_4_0}]
-
 # IP: bd/design_1/ip/design_1_xlconstant_5_0/design_1_xlconstant_5_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_xlconstant_5_0 || ORIG_REF_NAME==design_1_xlconstant_5_0}]
 

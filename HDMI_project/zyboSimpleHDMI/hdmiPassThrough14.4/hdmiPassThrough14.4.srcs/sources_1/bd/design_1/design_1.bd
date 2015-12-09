@@ -86,7 +86,7 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>VGA_R</spirit:name>
+          <spirit:name>VGA_B</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
             <spirit:vector>
@@ -96,7 +96,7 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>VGA_B</spirit:name>
+          <spirit:name>VGA_R</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
             <spirit:vector>
@@ -296,7 +296,7 @@
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_xlconstant_1_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CONST_WIDTH">10</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CONST_VAL">512</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CONST_VAL">50</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -305,7 +305,7 @@
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_xlconstant_2_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CONST_WIDTH">27</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CONST_VAL">23331319</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CONST_VAL">117900737</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -314,16 +314,7 @@
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_xlconstant_3_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CONST_WIDTH">27</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CONST_VAL">18680903</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>xlconstant_4</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_xlconstant_4_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CONST_WIDTH">10</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CONST_VAL">2750</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CONST_VAL">117900737</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -393,8 +384,8 @@
       <spirit:adHocConnection>
         <spirit:name>sobel4_0_rb_data_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="sobel9_0" spirit:portRef="rb_data_out"/>
-        <spirit:externalPortReference spirit:portRef="VGA_B"/>
         <spirit:externalPortReference spirit:portRef="VGA_R"/>
+        <spirit:externalPortReference spirit:portRef="VGA_B"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>xlconstant_5_dout</spirit:name>
@@ -417,11 +408,6 @@
         <spirit:internalPortReference spirit:componentRef="sobel9_0" spirit:portRef="mask2_in"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>xlconstant_4_dout</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="xlconstant_4" spirit:portRef="dout"/>
-        <spirit:internalPortReference spirit:componentRef="sobel9_0" spirit:portRef="delay"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>hdmi_rx_0_PXL_CLK</spirit:name>
         <spirit:internalPortReference spirit:componentRef="hdmi_rx_0" spirit:portRef="PXL_CLK"/>
         <spirit:internalPortReference spirit:componentRef="sobel9_0" spirit:portRef="clk"/>
@@ -432,16 +418,6 @@
         <spirit:internalPortReference spirit:componentRef="sobel9_0" spirit:portRef="enable"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>hdmi_rx_0_VGA_HS</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="hdmi_rx_0" spirit:portRef="VGA_HS"/>
-        <spirit:internalPortReference spirit:componentRef="sobel9_0" spirit:portRef="hsync_in"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>hdmi_rx_0_VGA_VS</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="hdmi_rx_0" spirit:portRef="VGA_VS"/>
-        <spirit:internalPortReference spirit:componentRef="sobel9_0" spirit:portRef="vsync_in"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>hdmi_rx_0_VGA_G</spirit:name>
         <spirit:internalPortReference spirit:componentRef="hdmi_rx_0" spirit:portRef="VGA_G"/>
         <spirit:internalPortReference spirit:componentRef="sobel9_0" spirit:portRef="grey_data_in"/>
@@ -450,6 +426,16 @@
         <spirit:name>sobel9_0_g_data_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="sobel9_0" spirit:portRef="g_data_out"/>
         <spirit:externalPortReference spirit:portRef="VGA_G"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>hdmi_rx_0_VGA_HS</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="hdmi_rx_0" spirit:portRef="VGA_HS"/>
+        <spirit:internalPortReference spirit:componentRef="sobel9_0" spirit:portRef="hsync_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>hdmi_rx_0_VGA_VS</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="hdmi_rx_0" spirit:portRef="VGA_VS"/>
+        <spirit:internalPortReference spirit:componentRef="sobel9_0" spirit:portRef="vsync_in"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>sobel9_0_hsync_out</spirit:name>

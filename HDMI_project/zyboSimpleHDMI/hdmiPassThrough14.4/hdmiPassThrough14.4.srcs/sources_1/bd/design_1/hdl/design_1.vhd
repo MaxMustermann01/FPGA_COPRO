@@ -1,7 +1,7 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.4 (lin32) Build 1071353 Tue Nov 18 16:37:30 MST 2014
---Date        : Mon Dec  7 15:02:52 2015
+--Date        : Wed Dec  9 13:11:17 2015
 --Host        : localhost.localdomain running 32-bit unknown
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -141,11 +141,6 @@ architecture STRUCTURE of design_1 is
     dout : out STD_LOGIC_VECTOR ( 26 downto 0 )
   );
   end component design_1_xlconstant_3_0;
-  component design_1_xlconstant_4_0 is
-  port (
-    dout : out STD_LOGIC_VECTOR ( 9 downto 0 )
-  );
-  end component design_1_xlconstant_4_0;
   component design_1_xlconstant_5_0 is
   port (
     dout : out STD_LOGIC_VECTOR ( 0 to 0 )
@@ -167,7 +162,6 @@ architecture STRUCTURE of design_1 is
     threshold_in : in STD_LOGIC_VECTOR ( 9 downto 0 );
     mask1_in : in STD_LOGIC_VECTOR ( 26 downto 0 );
     mask2_in : in STD_LOGIC_VECTOR ( 26 downto 0 );
-    delay : in STD_LOGIC_VECTOR ( 9 downto 0 );
     ready : out STD_LOGIC
   );
   end component design_1_sobel9_0_0;
@@ -214,7 +208,6 @@ architecture STRUCTURE of design_1 is
   signal xlconstant_1_dout : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal xlconstant_2_dout : STD_LOGIC_VECTOR ( 26 downto 0 );
   signal xlconstant_3_dout : STD_LOGIC_VECTOR ( 26 downto 0 );
-  signal xlconstant_4_dout : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal xlconstant_5_dout : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_hdmi_rx_0_HDMI_SDA_O_UNCONNECTED : STD_LOGIC;
   signal NLW_hdmi_rx_0_HDMI_SDA_T_UNCONNECTED : STD_LOGIC;
@@ -331,7 +324,6 @@ processing_system7_0: component design_1_processing_system7_0_0
 sobel9_0: component design_1_sobel9_0_0
     port map (
       clk => hdmi_rx_0_PXL_CLK,
-      delay(9 downto 0) => xlconstant_4_dout(9 downto 0),
       enable => hdmi_rx_0_VGA_DE,
       g_data_out(5 downto 0) => sobel9_0_g_data_out(5 downto 0),
       grey_data_in(5 downto 0) => hdmi_rx_0_VGA_G(5 downto 0),
@@ -362,10 +354,6 @@ xlconstant_2: component design_1_xlconstant_2_0
 xlconstant_3: component design_1_xlconstant_3_0
     port map (
       dout(26 downto 0) => xlconstant_3_dout(26 downto 0)
-    );
-xlconstant_4: component design_1_xlconstant_4_0
-    port map (
-      dout(9 downto 0) => xlconstant_4_dout(9 downto 0)
     );
 xlconstant_5: component design_1_xlconstant_5_0
     port map (

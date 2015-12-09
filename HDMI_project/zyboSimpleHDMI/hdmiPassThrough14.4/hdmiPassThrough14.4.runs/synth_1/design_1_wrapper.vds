@@ -2,8 +2,8 @@
 # Vivado v2014.4
 # SW Build 1071353 on Tue Nov 18 16:37:30 MST 2014
 # IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
-# Start of session at: Mon Dec  7 15:02:55 2015
-# Process ID: 12550
+# Start of session at: Wed Dec  9 13:11:22 2015
+# Process ID: 4676
 # Log file: /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/design_1_wrapper.vds
 # Journal file: /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
@@ -46,10 +46,20 @@ CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:digi
 CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'Digilent:digilent:axi_dispctrl:1.0'. The one found in IP location '/home/fel/Downloads/zybo_base_system/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0' will take precedence over the same IP in location /home/fel/zybo_base_system/source/vivado/hw/lib/Digilent/axi_dispctrl_1.0
 CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'analogdeviceinc.com:adi:axi_i2s_adi:1.0'. The one found in IP location '/home/fel/Downloads/zybo_base_system/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0' will take precedence over the same IP in location /home/fel/zybo_base_system/source/vivado/hw/lib/ADI/axi_i2s_adi_1.0
 CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:fifo_generator_v12_0_synth:1.0'. The one found in IP location '/home/fel/.local/share/Trash/files' will take precedence over the same IP in location /home/fel/.local/share/Trash/files/sobel_filter
-CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:mult:1.0'. The one found in IP location '/home/fel/.local/share/Trash/files/ip' will take precedence over the same IP in location /home/fel/zyboSimpleHDMI/ip
-CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:tbuf:1.01'. The one found in IP location '/home/fel/.local/share/Trash/files/ip/tbuf' will take precedence over the same IP in location /home/fel/zyboSimpleHDMI/ip/tbuf
-CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:hdmi_rx:1.0'. The one found in IP location '/home/fel/.local/share/Trash/files/ip/hdmi_rx_v1_00_a' will take precedence over the same IP in location /home/fel/zyboSimpleHDMI/ip/hdmi_rx_v1_00_a
-CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'custom:user:sobel_filter:1.0'. The one found in IP location '/home/fel/ip_repo/sobel_filter_1.0' will take precedence over the same IP in location /home/fel/zyboSimpleHDMI/ip_repo/sobel_filter_1.0
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:mult:1.0'. The one found in IP location '/home/fel/.local/share/Trash/files/ip' will take precedence over the same IP in locations: 
+   /home/fel/repo/FPGA_COPRO/HDMI_project/zyboSimpleHDMI/ip
+   /home/fel/zyboSimpleHDMI/ip
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:tbuf:1.01'. The one found in IP location '/home/fel/.local/share/Trash/files/ip/tbuf' will take precedence over the same IP in locations: 
+   /home/fel/repo/FPGA_COPRO/HDMI_project/zyboSimpleHDMI/ip/tbuf
+   /home/fel/zyboSimpleHDMI/ip/tbuf
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:hdmi_rx:1.0'. The one found in IP location '/home/fel/.local/share/Trash/files/ip/hdmi_rx_v1_00_a' will take precedence over the same IP in locations: 
+   /home/fel/repo/FPGA_COPRO/HDMI_project/zyboSimpleHDMI/ip/hdmi_rx_v1_00_a
+   /home/fel/zyboSimpleHDMI/ip/hdmi_rx_v1_00_a
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:sobel9:1.0'. The one found in IP location '/home/fel/repo/FPGA_COPRO/HDMI_project/sobel_test/src' will take precedence over the same IP in location /home/fel/sobel_test/src
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'custom:user:sobel_filter:1.0'. The one found in IP location '/home/fel/repo/FPGA_COPRO/HDMI_project/zyboSimpleHDMI/ip_repo/sobel_filter_1.0' will take precedence over the same IP in locations: 
+   /home/fel/ip_repo/sobel_filter_1.0
+   /home/fel/zyboSimpleHDMI/ip_repo/sobel_filter_1.0
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:design_1_wrapper:1.0'. The one found in IP location '/home/fel/repo/FPGA_COPRO/HDMI_project/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs' will take precedence over the same IP in location /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs
 WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:processing_system7:5.5'. The one found in IP location '/home/fel/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/processing_system7_v5_5/da926f63' will take precedence over the same IP in the Xilinx installed IP.
 # set_property used_in_implementation false [get_files -all /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
 # set_property used_in_implementation false [get_files -all /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/src/fifo_line1/fifo_line1/fifo_line1.xdc]
@@ -67,15 +77,15 @@ Command: synth_design -top design_1_wrapper -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
-INFO: [Common 17-1223] The version limit for your license is '2015.04' and will expire in -221 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Common 17-1223] The version limit for your license is '2015.04' and will expire in -223 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 620.887 ; gain = 86.105 ; free physical = 596 ; free virtual = 0
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 619.875 ; gain = 86.109 ; free physical = 292 ; free virtual = 0
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:52]
 INFO: [Synth 8-3491] module 'design_1' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:14' bound to instance 'design_1_i' of component 'design_1' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:91]
 INFO: [Synth 8-638] synthesizing module 'design_1' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:52]
-INFO: [Synth 8-113] binding component instance 'GND' to cell 'GND' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:258]
-INFO: [Synth 8-3491] module 'design_1_hdmi_rx_0_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_hdmi_rx_0_0/synth/design_1_hdmi_rx_0_0.vhd:59' bound to instance 'hdmi_rx_0' of component 'design_1_hdmi_rx_0_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:262]
+INFO: [Synth 8-113] binding component instance 'GND' to cell 'GND' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:251]
+INFO: [Synth 8-3491] module 'design_1_hdmi_rx_0_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_hdmi_rx_0_0/synth/design_1_hdmi_rx_0_0.vhd:59' bound to instance 'hdmi_rx_0' of component 'design_1_hdmi_rx_0_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:255]
 INFO: [Synth 8-638] synthesizing module 'design_1_hdmi_rx_0_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_hdmi_rx_0_0/synth/design_1_hdmi_rx_0_0.vhd:87]
 INFO: [Synth 8-3491] module 'hdmi_rx' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/hdmi_rx_v1_0/6e86e573/hdl/vhdl/hdmi_rx.vhd:33' bound to instance 'U0' of component 'hdmi_rx' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_hdmi_rx_0_0/synth/design_1_hdmi_rx_0_0.vhd:125]
 INFO: [Synth 8-638] synthesizing module 'hdmi_rx' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/hdmi_rx_v1_0/6e86e573/hdl/vhdl/hdmi_rx.vhd:65]
@@ -313,7 +323,7 @@ INFO: [Synth 8-3491] module 'decoder' declared at '/home/fel/zyboSimpleHDMI/hdmi
 INFO: [Synth 8-3491] module 'decoder' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/hdmi_rx_v1_0/6e86e573/hdl/verilog/decoder.v:21' bound to instance 'RedDecoder' of component 'decoder' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/hdmi_rx_v1_0/6e86e573/hdl/vhdl/hdmi_rx.vhd:300]
 INFO: [Synth 8-256] done synthesizing module 'hdmi_rx' (10#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/hdmi_rx_v1_0/6e86e573/hdl/vhdl/hdmi_rx.vhd:65]
 INFO: [Synth 8-256] done synthesizing module 'design_1_hdmi_rx_0_0' (11#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_hdmi_rx_0_0/synth/design_1_hdmi_rx_0_0.vhd:87]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:57' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:288]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:57' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:281]
 INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:154]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
@@ -493,11 +503,13 @@ WARNING: [Synth 8-3848] Net FTMD_TRACEIN_VALID_i in module/entity processing_sys
 INFO: [Synth 8-256] done synthesizing module 'processing_system7_v5_5_processing_system7' (15#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:154]
 WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:223]
 INFO: [Synth 8-256] done synthesizing module 'design_1_processing_system7_0_0' (16#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_sobel9_0_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/synth/design_1_sobel9_0_0.vhd:56' bound to instance 'sobel9_0' of component 'design_1_sobel9_0_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:331]
-INFO: [Synth 8-638] synthesizing module 'design_1_sobel9_0_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/synth/design_1_sobel9_0_0.vhd:77]
-INFO: [Synth 8-3491] module 'dataflow' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/dataflow.vhd:35' bound to instance 'U0' of component 'dataflow' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/synth/design_1_sobel9_0_0.vhd:108]
-INFO: [Synth 8-638] synthesizing module 'dataflow' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/dataflow.vhd:61]
-INFO: [Synth 8-3491] module 'fifo_line1' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/src/fifo_line1/synth/fifo_line1.vhd:59' bound to instance 'fifo1' of component 'fifo_line1' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/dataflow.vhd:150]
+INFO: [Synth 8-3491] module 'design_1_sobel9_0_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/synth/design_1_sobel9_0_0.vhd:56' bound to instance 'sobel9_0' of component 'design_1_sobel9_0_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:324]
+INFO: [Synth 8-638] synthesizing module 'design_1_sobel9_0_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/synth/design_1_sobel9_0_0.vhd:76]
+	Parameter DELAY bound to: 2750 - type: integer 
+INFO: [Synth 8-3491] module 'dataflow' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/dataflow.vhd:35' bound to instance 'U0' of component 'dataflow' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/synth/design_1_sobel9_0_0.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'dataflow__parameterized0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/dataflow.vhd:57]
+	Parameter DELAY bound to: 2750 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_line1' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/src/fifo_line1/synth/fifo_line1.vhd:59' bound to instance 'fifo1' of component 'fifo_line1' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/dataflow.vhd:138]
 INFO: [Synth 8-638] synthesizing module 'fifo_line1' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/src/fifo_line1/synth/fifo_line1.vhd:73]
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
@@ -2034,29 +2046,27 @@ INFO: [Synth 8-256] done synthesizing module 'fifo_generator_top' (38#1) [/home/
 INFO: [Synth 8-256] done synthesizing module 'fifo_generator_v12_0_synth' (39#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/src/fifo_line1/fifo_generator_v12_0/hdl/fifo_generator_v12_0_vhsyn_rfs.vhd:33162]
 INFO: [Synth 8-256] done synthesizing module 'fifo_generator_v12_0__parameterized0' (40#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/src/fifo_line1/fifo_generator_v12_0/hdl/fifo_generator_v12_0.vhd:665]
 INFO: [Synth 8-256] done synthesizing module 'fifo_line1' (41#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/src/fifo_line1/synth/fifo_line1.vhd:73]
-INFO: [Synth 8-3491] module 'fifo_line1' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/src/fifo_line1/synth/fifo_line1.vhd:59' bound to instance 'fifo2' of component 'fifo_line1' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/dataflow.vhd:153]
-INFO: [Synth 8-3491] module 'counter3' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/counter.vhd:75' bound to instance 'rst_dalay_cnt' of component 'counter3' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/dataflow.vhd:156]
-INFO: [Synth 8-638] synthesizing module 'counter3' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/counter.vhd:81]
-INFO: [Synth 8-226] default block is never used [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/counter.vhd:93]
-WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/counter.vhd:86]
-INFO: [Synth 8-256] done synthesizing module 'counter3' (42#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/counter.vhd:81]
-INFO: [Synth 8-3491] module 'counter2' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/counter.vhd:34' bound to instance 'stage1_cnt' of component 'counter2' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/dataflow.vhd:157]
-INFO: [Synth 8-638] synthesizing module 'counter2' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/counter.vhd:40]
-INFO: [Synth 8-226] default block is never used [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/counter.vhd:52]
-WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/counter.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'counter2' (43#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/counter.vhd:40]
-INFO: [Synth 8-3491] module 'counter2' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/counter.vhd:34' bound to instance 'stage2_cnt' of component 'counter2' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/dataflow.vhd:158]
-INFO: [Synth 8-3491] module 'counter2' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/counter.vhd:34' bound to instance 'stage3_cnt' of component 'counter2' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/dataflow.vhd:159]
-INFO: [Synth 8-3491] module 'sobel_calc' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/sobel_calc.vhd:51' bound to instance 'sobel' of component 'sobel_calc' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/dataflow.vhd:161]
-INFO: [Synth 8-638] synthesizing module 'sobel_calc' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/sobel_calc.vhd:73]
-INFO: [Synth 8-256] done synthesizing module 'sobel_calc' (44#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/sobel_calc.vhd:73]
-WARNING: [Synth 8-614] signal 'rst_delay' is read in the process but is not in the sensitivity list [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/dataflow.vhd:163]
-WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/dataflow.vhd:163]
-INFO: [Synth 8-226] default block is never used [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/dataflow.vhd:202]
-INFO: [Synth 8-226] default block is never used [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/dataflow.vhd:234]
-INFO: [Synth 8-256] done synthesizing module 'dataflow' (45#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/3d69c88d/dataflow.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'design_1_sobel9_0_0' (46#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/synth/design_1_sobel9_0_0.vhd:77]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_0_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.vhd:29' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:350]
+INFO: [Synth 8-3491] module 'fifo_line1' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/src/fifo_line1/synth/fifo_line1.vhd:59' bound to instance 'fifo2' of component 'fifo_line1' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/dataflow.vhd:141]
+INFO: [Synth 8-3491] module 'counter3' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/counter.vhd:75' bound to instance 'rst_dalay_cnt' of component 'counter3' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/dataflow.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'counter3' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/counter.vhd:81]
+INFO: [Synth 8-226] default block is never used [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/counter.vhd:93]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/counter.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'counter3' (42#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/counter.vhd:81]
+INFO: [Synth 8-3491] module 'counter2' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/counter.vhd:34' bound to instance 'stage1_cnt' of component 'counter2' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/dataflow.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'counter2' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/counter.vhd:40]
+INFO: [Synth 8-226] default block is never used [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/counter.vhd:52]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/counter.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'counter2' (43#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/counter.vhd:40]
+INFO: [Synth 8-3491] module 'counter2' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/counter.vhd:34' bound to instance 'stage2_cnt' of component 'counter2' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/dataflow.vhd:146]
+INFO: [Synth 8-3491] module 'counter2' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/counter.vhd:34' bound to instance 'stage3_cnt' of component 'counter2' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/dataflow.vhd:147]
+INFO: [Synth 8-3491] module 'sobel_calc' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/sobel_calc.vhd:51' bound to instance 'sobel' of component 'sobel_calc' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/dataflow.vhd:149]
+INFO: [Synth 8-638] synthesizing module 'sobel_calc' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/sobel_calc.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'sobel_calc' (44#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/sobel_calc.vhd:73]
+WARNING: [Synth 8-614] signal 'rst_delay' is read in the process but is not in the sensitivity list [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/dataflow.vhd:151]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/dataflow.vhd:151]
+INFO: [Synth 8-256] done synthesizing module 'dataflow__parameterized0' (45#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/dataflow.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'design_1_sobel9_0_0' (46#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/synth/design_1_sobel9_0_0.vhd:76]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.vhd:29' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:342]
 INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.vhd:35]
 	Parameter CONST_VAL bound to: 1'b0 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
@@ -2066,56 +2076,42 @@ INFO: [Synth 8-638] synthesizing module 'xlconstant__parameterized0' [/home/fel/
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'xlconstant__parameterized0' (47#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/xilinx.com/xlconstant_v1_1/36911fd5/xlconstant.vhd:36]
 INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_0' (48#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.vhd:35]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_1_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.vhd:29' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:354]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_1_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.vhd:29' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:346]
 INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_1_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.vhd:35]
-	Parameter CONST_VAL bound to: 10'b1000000000 
+	Parameter CONST_VAL bound to: 10'b0000110010 
 	Parameter CONST_WIDTH bound to: 10 - type: integer 
 INFO: [Synth 8-3491] module 'xlconstant' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/xilinx.com/xlconstant_v1_1/36911fd5/xlconstant.vhd:27' bound to instance 'U0' of component 'xlconstant' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.vhd:49]
 INFO: [Synth 8-638] synthesizing module 'xlconstant__parameterized2' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/xilinx.com/xlconstant_v1_1/36911fd5/xlconstant.vhd:36]
-	Parameter CONST_VAL bound to: 10'b1000000000 
+	Parameter CONST_VAL bound to: 10'b0000110010 
 	Parameter CONST_WIDTH bound to: 10 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'xlconstant__parameterized2' (48#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/xilinx.com/xlconstant_v1_1/36911fd5/xlconstant.vhd:36]
 INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_1_0' (49#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.vhd:35]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_2_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/sim/design_1_xlconstant_2_0.vhd:29' bound to instance 'xlconstant_2' of component 'design_1_xlconstant_2_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:358]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_2_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/sim/design_1_xlconstant_2_0.vhd:29' bound to instance 'xlconstant_2' of component 'design_1_xlconstant_2_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:350]
 INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_2_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/sim/design_1_xlconstant_2_0.vhd:35]
-	Parameter CONST_VAL bound to: 27'b001011001000000000111110111 
+	Parameter CONST_VAL bound to: 27'b111000001110000010111000001 
 	Parameter CONST_WIDTH bound to: 27 - type: integer 
 INFO: [Synth 8-3491] module 'xlconstant' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/xilinx.com/xlconstant_v1_1/36911fd5/xlconstant.vhd:27' bound to instance 'U0' of component 'xlconstant' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/sim/design_1_xlconstant_2_0.vhd:49]
 INFO: [Synth 8-638] synthesizing module 'xlconstant__parameterized4' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/xilinx.com/xlconstant_v1_1/36911fd5/xlconstant.vhd:36]
-	Parameter CONST_VAL bound to: 27'b001011001000000000111110111 
+	Parameter CONST_VAL bound to: 27'b111000001110000010111000001 
 	Parameter CONST_WIDTH bound to: 27 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'xlconstant__parameterized4' (49#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/xilinx.com/xlconstant_v1_1/36911fd5/xlconstant.vhd:36]
 INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_2_0' (50#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/sim/design_1_xlconstant_2_0.vhd:35]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_3_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_3_0/sim/design_1_xlconstant_3_0.vhd:29' bound to instance 'xlconstant_3' of component 'design_1_xlconstant_3_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:362]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_3_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_3_0/sim/design_1_xlconstant_3_0.vhd:29' bound to instance 'xlconstant_3' of component 'design_1_xlconstant_3_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:354]
 INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_3_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_3_0/sim/design_1_xlconstant_3_0.vhd:35]
-	Parameter CONST_VAL bound to: 27'b001000111010000110001000111 
+	Parameter CONST_VAL bound to: 27'b111000001110000010111000001 
 	Parameter CONST_WIDTH bound to: 27 - type: integer 
 INFO: [Synth 8-3491] module 'xlconstant' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/xilinx.com/xlconstant_v1_1/36911fd5/xlconstant.vhd:27' bound to instance 'U0' of component 'xlconstant' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_3_0/sim/design_1_xlconstant_3_0.vhd:49]
-INFO: [Synth 8-638] synthesizing module 'xlconstant__parameterized6' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/xilinx.com/xlconstant_v1_1/36911fd5/xlconstant.vhd:36]
-	Parameter CONST_VAL bound to: 27'b001000111010000110001000111 
-	Parameter CONST_WIDTH bound to: 27 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'xlconstant__parameterized6' (50#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/xilinx.com/xlconstant_v1_1/36911fd5/xlconstant.vhd:36]
 INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_3_0' (51#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_3_0/sim/design_1_xlconstant_3_0.vhd:35]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_4_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_4_0/sim/design_1_xlconstant_4_0.vhd:29' bound to instance 'xlconstant_4' of component 'design_1_xlconstant_4_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:366]
-INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_4_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_4_0/sim/design_1_xlconstant_4_0.vhd:35]
-	Parameter CONST_VAL bound to: 10'b1010111110 
-	Parameter CONST_WIDTH bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'xlconstant' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/xilinx.com/xlconstant_v1_1/36911fd5/xlconstant.vhd:27' bound to instance 'U0' of component 'xlconstant' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_4_0/sim/design_1_xlconstant_4_0.vhd:49]
-INFO: [Synth 8-638] synthesizing module 'xlconstant__parameterized8' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/xilinx.com/xlconstant_v1_1/36911fd5/xlconstant.vhd:36]
-	Parameter CONST_VAL bound to: 10'b1010111110 
-	Parameter CONST_WIDTH bound to: 10 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'xlconstant__parameterized8' (51#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/xilinx.com/xlconstant_v1_1/36911fd5/xlconstant.vhd:36]
-INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_4_0' (52#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_4_0/sim/design_1_xlconstant_4_0.vhd:35]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_5_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/sim/design_1_xlconstant_5_0.vhd:29' bound to instance 'xlconstant_5' of component 'design_1_xlconstant_5_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:370]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_5_0' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/sim/design_1_xlconstant_5_0.vhd:29' bound to instance 'xlconstant_5' of component 'design_1_xlconstant_5_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:358]
 INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_5_0' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/sim/design_1_xlconstant_5_0.vhd:35]
 	Parameter CONST_VAL bound to: 1'b0 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-3491] module 'xlconstant' declared at '/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/xilinx.com/xlconstant_v1_1/36911fd5/xlconstant.vhd:27' bound to instance 'U0' of component 'xlconstant' [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/sim/design_1_xlconstant_5_0.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_5_0' (53#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/sim/design_1_xlconstant_5_0.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (54#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:52]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (55#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_5_0' (52#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/sim/design_1_xlconstant_5_0.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (53#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (54#1) [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:52]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:01:28 . Memory (MB): peak = 767.551 ; gain = 232.770 ; free physical = 428 ; free virtual = 0
+Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:01:30 . Memory (MB): peak = 766.535 ; gain = 232.770 ; free physical = 135 ; free virtual = 0
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2127,7 +2123,7 @@ Report Check Netlist:
 INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[8] to constant 0 [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/src/fifo_line1/blk_mem_gen_v8_2/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183401]
 INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINB[8] to constant 0 [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_sobel9_0_0/src/fifo_line1/blk_mem_gen_v8_2/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183401]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:01:29 . Memory (MB): peak = 767.551 ; gain = 232.770 ; free physical = 428 ; free virtual = 0
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:01:30 . Memory (MB): peak = 766.535 ; gain = 232.770 ; free physical = 135 ; free virtual = 0
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -2163,16 +2159,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IBUFGDS => IBUFDS: 1 instances
   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 30 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.02 . Memory (MB): peak = 858.547 ; gain = 0.000 ; free physical = 416 ; free virtual = 0
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 880.531 ; gain = 0.000 ; free physical = 119 ; free virtual = 0
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:00 ; elapsed = 00:01:44 . Memory (MB): peak = 858.551 ; gain = 323.770 ; free physical = 415 ; free virtual = 0
+Finished Constraint Validation : Time (s): cpu = 00:00:00 ; elapsed = 00:01:47 . Memory (MB): peak = 880.535 ; gain = 346.770 ; free physical = 118 ; free virtual = 0
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:00 ; elapsed = 00:01:44 . Memory (MB): peak = 858.551 ; gain = 323.770 ; free physical = 415 ; free virtual = 0
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:00 ; elapsed = 00:01:47 . Memory (MB): peak = 880.535 ; gain = 346.770 ; free physical = 118 ; free virtual = 0
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -2184,16 +2180,15 @@ Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_0. (constraint 
 Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_1. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 19).
 Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_2. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 22).
 Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_3. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 25).
-Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_4. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 28).
-Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_5. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 31).
-Applied set_property DONT_TOUCH = true for design_1_i/sobel9_0. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 34).
-Applied set_property DONT_TOUCH = true for design_1_i/sobel9_0/U0/fifo1. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 37).
-Applied set_property DONT_TOUCH = true for design_1_i/sobel9_0/U0/fifo2. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 37).
-Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0/inst. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 40).
-Applied set_property DONT_TOUCH = true for design_1_i/sobel9_0/U0/fifo1/U0. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 43).
-Applied set_property DONT_TOUCH = true for design_1_i/sobel9_0/U0/fifo2/U0. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 43).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_5. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 28).
+Applied set_property DONT_TOUCH = true for design_1_i/sobel9_0. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 31).
+Applied set_property DONT_TOUCH = true for design_1_i/sobel9_0/U0/fifo1. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 34).
+Applied set_property DONT_TOUCH = true for design_1_i/sobel9_0/U0/fifo2. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 34).
+Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0/inst. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 37).
+Applied set_property DONT_TOUCH = true for design_1_i/sobel9_0/U0/fifo1/U0. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 40).
+Applied set_property DONT_TOUCH = true for design_1_i/sobel9_0/U0/fifo2/U0. (constraint file  /home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.runs/synth_1/dont_touch.xdc, line 40).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:00 ; elapsed = 00:01:47 . Memory (MB): peak = 858.551 ; gain = 323.770 ; free physical = 415 ; free virtual = 0
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:00 ; elapsed = 00:01:50 . Memory (MB): peak = 880.535 ; gain = 346.770 ; free physical = 118 ; free virtual = 0
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWISlaveCtl__parameterized0'
 ROM "shiftBitOut" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
@@ -2239,7 +2234,7 @@ WARNING: [Synth 8-3848] Net FTMD_TRACEIN_ATID_i in module/entity processing_syst
 WARNING: [Synth 8-3848] Net FTMD_TRACEIN_DATA_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1070]
 WARNING: [Synth 8-3848] Net FTMD_TRACEIN_VALID_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1071]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:00 ; elapsed = 00:01:48 . Memory (MB): peak = 858.551 ; gain = 323.770 ; free physical = 411 ; free virtual = 0
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:00 ; elapsed = 00:01:51 . Memory (MB): peak = 880.535 ; gain = 346.770 ; free physical = 114 ; free virtual = 0
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2250,6 +2245,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register hsync_sr_reg [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/dataflow.vhd:185]
+INFO: [Synth 8-3538] Detected potentially large (wide) register vsync_sr_reg [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/dataflow.vhd:182]
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 8     
@@ -2265,6 +2262,7 @@ Detailed RTL Component Info :
 +---XORs : 
 	   2 Input      1 Bit         XORs := 130   
 +---Registers : 
+	             2750 Bit    Registers := 2     
 	               14 Bit    Registers := 3     
 	               12 Bit    Registers := 2     
 	               11 Bit    Registers := 8     
@@ -2274,7 +2272,7 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 15    
 	                3 Bit    Registers := 3     
 	                2 Bit    Registers := 10    
-	                1 Bit    Registers := 168   
+	                1 Bit    Registers := 164   
 +---RAMs : 
 	             1024 Bit         RAMs := 1     
 +---Muxes : 
@@ -2290,7 +2288,7 @@ Detailed RTL Component Info :
 	  22 Input      3 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 5     
 	   2 Input      2 Bit        Muxes := 5     
-	   2 Input      1 Bit        Muxes := 75    
+	   2 Input      1 Bit        Muxes := 67    
 	   7 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 6     
 	  15 Input      1 Bit        Muxes := 45    
@@ -2301,6 +2299,8 @@ Finished RTL Component Statistics
 ---------------------------------------------------------------------------------
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register hsync_sr_reg [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/dataflow.vhd:185]
+INFO: [Synth 8-3538] Detected potentially large (wide) register vsync_sr_reg [/home/fel/zyboSimpleHDMI/hdmiPassThrough14.4/hdmiPassThrough14.4.srcs/sources_1/ipshared/user.org/sobel9_v1_0/9c7882e3/dataflow.vhd:182]
 Hierarchical RTL Component report 
 Module design_1_wrapper 
 Detailed RTL Component Info : 
@@ -2505,13 +2505,12 @@ Detailed RTL Component Info :
 	   5 Input     32 Bit        Muxes := 9     
 	   2 Input     10 Bit        Muxes := 1     
 	   5 Input      9 Bit        Muxes := 9     
-Module dataflow 
+Module dataflow__parameterized0 
 Detailed RTL Component Info : 
 +---Registers : 
+	             2750 Bit    Registers := 2     
 	                8 Bit    Registers := 7     
-	                1 Bit    Registers := 6     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 8     
+	                1 Bit    Registers := 2     
 Module design_1_sobel9_0_0 
 Detailed RTL Component Info : 
 Module xlconstant__parameterized0 
@@ -2526,13 +2525,7 @@ Module xlconstant__parameterized4
 Detailed RTL Component Info : 
 Module design_1_xlconstant_2_0 
 Detailed RTL Component Info : 
-Module xlconstant__parameterized6 
-Detailed RTL Component Info : 
 Module design_1_xlconstant_3_0 
-Detailed RTL Component Info : 
-Module xlconstant__parameterized8 
-Detailed RTL Component Info : 
-Module design_1_xlconstant_4_0 
 Detailed RTL Component Info : 
 Module design_1_xlconstant_5_0 
 Detailed RTL Component Info : 
@@ -2550,7 +2543,7 @@ BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:00 ; elapsed = 00:01:49 . Memory (MB): peak = 858.551 ; gain = 323.770 ; free physical = 411 ; free virtual = 0
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:00 ; elapsed = 00:01:52 . Memory (MB): peak = 880.535 ; gain = 346.770 ; free physical = 114 ; free virtual = 0
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -2573,9 +2566,9 @@ ROM "PhaseAlignment/tkn0" won't be mapped to RAM because it is too sparse.
 ROM "c0" won't be mapped to RAM because it is too sparse.
 ROM "vde" won't be mapped to RAM because it is too sparse.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:00 ; elapsed = 00:01:50 . Memory (MB): peak = 858.551 ; gain = 323.770 ; free physical = 410 ; free virtual = 0
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:00 ; elapsed = 00:01:53 . Memory (MB): peak = 880.535 ; gain = 346.770 ; free physical = 113 ; free virtual = 0
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:00 ; elapsed = 00:01:50 . Memory (MB): peak = 858.551 ; gain = 323.770 ; free physical = 410 ; free virtual = 0
+Finished Parallel Reinference  : Time (s): cpu = 00:00:00 ; elapsed = 00:01:53 . Memory (MB): peak = 880.535 ; gain = 346.770 ; free physical = 113 ; free virtual = 0
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -2639,19 +2632,19 @@ Finished RAM, DSP and Shift Register Reporting
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:00 ; elapsed = 00:01:54 . Memory (MB): peak = 858.555 ; gain = 323.773 ; free physical = 397 ; free virtual = 0
+Finished Area Optimization : Time (s): cpu = 00:00:00 ; elapsed = 00:01:58 . Memory (MB): peak = 880.539 ; gain = 346.773 ; free physical = 95 ; free virtual = 0
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:00 ; elapsed = 00:01:54 . Memory (MB): peak = 858.555 ; gain = 323.773 ; free physical = 397 ; free virtual = 0
+Finished Area Optimization : Time (s): cpu = 00:00:00 ; elapsed = 00:01:58 . Memory (MB): peak = 880.539 ; gain = 346.773 ; free physical = 95 ; free virtual = 0
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:00 ; elapsed = 00:01:54 . Memory (MB): peak = 858.555 ; gain = 323.773 ; free physical = 397 ; free virtual = 0
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:00 ; elapsed = 00:01:58 . Memory (MB): peak = 880.539 ; gain = 346.773 ; free physical = 95 ; free virtual = 0
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:00 ; elapsed = 00:01:54 . Memory (MB): peak = 858.555 ; gain = 323.773 ; free physical = 397 ; free virtual = 0
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:00 ; elapsed = 00:01:58 . Memory (MB): peak = 880.539 ; gain = 346.773 ; free physical = 95 ; free virtual = 0
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -2659,10 +2652,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:00 ; elapsed = 00:02:13 . Memory (MB): peak = 956.547 ; gain = 421.766 ; free physical = 244 ; free virtual = 0
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:00 ; elapsed = 00:02:17 . Memory (MB): peak = 972.531 ; gain = 438.766 ; free physical = 68 ; free virtual = 0
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:00 ; elapsed = 00:02:13 . Memory (MB): peak = 964.555 ; gain = 429.773 ; free physical = 235 ; free virtual = 0
+Finished Timing Optimization : Time (s): cpu = 00:00:00 ; elapsed = 00:02:18 . Memory (MB): peak = 981.539 ; gain = 447.773 ; free physical = 72 ; free virtual = 0
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2682,83 +2675,9 @@ INFO: [Synth 8-3332] Sequential element (\U0/RedDecoder/bitslip_cntr_reg[3] ) is
 INFO: [Synth 8-3332] Sequential element (\U0/RedDecoder/bitslip_cntr_reg[2] ) is unused and will be removed from module design_1_hdmi_rx_0_0.
 INFO: [Synth 8-3332] Sequential element (\U0/RedDecoder/bitslip_cntr_reg[1] ) is unused and will be removed from module design_1_hdmi_rx_0_0.
 INFO: [Synth 8-3332] Sequential element (\U0/RedDecoder/bitslip_cntr_reg[0] ) is unused and will be removed from module design_1_hdmi_rx_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/hsync_valid_reg ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/hsync_valid_reg__0 ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/vsync_valid_reg ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/vsync_valid_reg__0 ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/next_s_h_reg ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/hsync_reg ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/hsync_out_reg ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/next_s_reg ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/vsync_reg ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/vsync_out_reg ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[0] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[1] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[2] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[3] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[4] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[5] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[6] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[7] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[8] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[9] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[10] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[11] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[12] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[13] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[14] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[15] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[16] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[17] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[18] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[19] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[20] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[21] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[22] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[23] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[24] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[25] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[26] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[27] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[28] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[29] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[30] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_h_reg[31] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[0] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[1] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[2] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[3] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[4] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[5] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[6] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[7] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[8] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[9] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[10] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[11] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[12] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[13] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[14] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[15] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[16] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[17] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[18] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[19] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[20] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[21] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[22] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[23] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[24] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[25] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[26] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[27] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[28] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[29] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[30] ) is unused and will be removed from module design_1_sobel9_0_0.
-INFO: [Synth 8-3332] Sequential element (\U0/c_reg[31] ) is unused and will be removed from module design_1_sobel9_0_0.
 INFO: [Synth 8-4480] The timing for the instance \U0/Edid/edid_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:00 ; elapsed = 00:02:20 . Memory (MB): peak = 986.562 ; gain = 451.781 ; free physical = 212 ; free virtual = 0
+Finished Technology Mapping : Time (s): cpu = 00:00:00 ; elapsed = 00:02:26 . Memory (MB): peak = 1011.633 ; gain = 477.867 ; free physical = 82 ; free virtual = 0
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2785,7 +2704,7 @@ WARNING: [Synth 8-3295] tying undriven pin \U0/BlueDecoder/IBuffs/clk_div_inferr
 WARNING: [Synth 8-3295] tying undriven pin \U0/GreenDecoder/IBuffs/clk_div_inferred :in0 to constant 0
 WARNING: [Synth 8-3295] tying undriven pin \U0/RedDecoder/IBuffs/clk_div_inferred :in0 to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:00 ; elapsed = 00:02:22 . Memory (MB): peak = 986.562 ; gain = 451.781 ; free physical = 207 ; free virtual = 0
+Finished IO Insertion : Time (s): cpu = 00:00:00 ; elapsed = 00:02:28 . Memory (MB): peak = 1011.633 ; gain = 477.867 ; free physical = 82 ; free virtual = 0
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2798,7 +2717,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:00 ; elapsed = 00:02:22 . Memory (MB): peak = 986.562 ; gain = 451.781 ; free physical = 207 ; free virtual = 0
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:00 ; elapsed = 00:02:28 . Memory (MB): peak = 1011.633 ; gain = 477.867 ; free physical = 82 ; free virtual = 0
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2810,11 +2729,20 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:00 ; elapsed = 00:02:23 . Memory (MB): peak = 986.562 ; gain = 451.781 ; free physical = 231 ; free virtual = 0
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:00 ; elapsed = 00:02:28 . Memory (MB): peak = 1011.633 ; gain = 477.867 ; free physical = 82 ; free virtual = 0
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
+
+Static Shift Register:
++--------------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name         | RTL Name         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|design_1_sobel9_0_0 | U0/hsync_out_reg | 2751   | 1     | NO           | NO                 | YES               | 0      | 86      | 
+|design_1_sobel9_0_0 | U0/vsync_out_reg | 2751   | 1     | NO           | NO                 | YES               | 0      | 86      | 
++--------------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
 ---------------------------------------------------------------------------------
 Finished RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -2856,22 +2784,23 @@ Report Cell Usage:
 |22    |RAM32X1D    |    30|
 |23    |RAMB18E1    |     1|
 |24    |RAMB18E1_1  |     2|
-|25    |XORCY       |    57|
-|26    |FDCE        |   482|
-|27    |FDPE        |    39|
-|28    |FDRE        |   344|
-|29    |IBUF        |     1|
-|30    |IBUFDS      |     3|
-|31    |IBUFGDS     |     1|
-|32    |OBUF        |    20|
+|25    |SRLC32E     |   172|
+|26    |XORCY       |    57|
+|27    |FDCE        |   482|
+|28    |FDPE        |    39|
+|29    |FDRE        |   346|
+|30    |IBUF        |     1|
+|31    |IBUFDS      |     3|
+|32    |IBUFGDS     |     1|
+|33    |OBUF        |    20|
 +------+------------+------+
 
 Report Instance Areas: 
 +------+--------------------------------------------------------+-------------------------------------------+------+
 |      |Instance                                                |Module                                     |Cells |
 +------+--------------------------------------------------------+-------------------------------------------+------+
-|1     |top                                                     |                                           |  3228|
-|2     |  design_1_i                                            |design_1                                   |  3207|
+|1     |top                                                     |                                           |  3402|
+|2     |  design_1_i                                            |design_1                                   |  3381|
 |3     |    hdmi_rx_0                                           |design_1_hdmi_rx_0_0                       |  1306|
 |4     |      U0                                                |hdmi_rx                                    |  1305|
 |5     |        BlueDecoder                                     |decoder                                    |   397|
@@ -2894,8 +2823,8 @@ Report Instance Areas:
 |22    |          PhaseAlignment                                |phasealign                                 |   291|
 |23    |    processing_system7_0                                |design_1_processing_system7_0_0            |   220|
 |24    |      inst                                              |processing_system7_v5_5_processing_system7 |   220|
-|25    |    sobel9_0                                            |design_1_sobel9_0_0                        |  1680|
-|26    |      U0                                                |dataflow                                   |  1680|
+|25    |    sobel9_0                                            |design_1_sobel9_0_0                        |  1854|
+|26    |      U0                                                |dataflow__parameterized0                   |  1854|
 |27    |        fifo1                                           |fifo_line1__xdcDup__1                      |   173|
 |28    |          U0                                            |fifo_generator_v12_0__parameterized0__2    |   173|
 |29    |            inst_fifo_gen                               |fifo_generator_v12_0_synth_5               |   173|
@@ -2953,15 +2882,14 @@ Report Instance Areas:
 |81    |    xlconstant_1                                        |design_1_xlconstant_1_0                    |     0|
 |82    |    xlconstant_2                                        |design_1_xlconstant_2_0                    |     0|
 |83    |    xlconstant_3                                        |design_1_xlconstant_3_0                    |     0|
-|84    |    xlconstant_4                                        |design_1_xlconstant_4_0                    |     0|
-|85    |    xlconstant_5                                        |design_1_xlconstant_5_0                    |     0|
+|84    |    xlconstant_5                                        |design_1_xlconstant_5_0                    |     0|
 +------+--------------------------------------------------------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:00 ; elapsed = 00:02:23 . Memory (MB): peak = 986.562 ; gain = 451.781 ; free physical = 254 ; free virtual = 0
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:00 ; elapsed = 00:02:29 . Memory (MB): peak = 1011.633 ; gain = 477.867 ; free physical = 82 ; free virtual = 0
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:02:06 . Memory (MB): peak = 986.562 ; gain = 301.676 ; free physical = 257 ; free virtual = 0
-Synthesis Optimization Complete : Time (s): cpu = 00:00:00 ; elapsed = 00:02:23 . Memory (MB): peak = 986.562 ; gain = 451.781 ; free physical = 255 ; free virtual = 0
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:02:11 . Memory (MB): peak = 1011.633 ; gain = 303.762 ; free physical = 82 ; free virtual = 0
+Synthesis Optimization Complete : Time (s): cpu = 00:00:00 ; elapsed = 00:02:29 . Memory (MB): peak = 1011.633 ; gain = 477.867 ; free physical = 82 ; free virtual = 0
 INFO: [Project 1-571] Translating synthesized netlist
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'design_1_i/hdmi_rx_0/U0/Edid/edid_reg' of type 'RAMB18E1' is 'VIRTEX6'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist or constraint file.
 INFO: [Netlist 29-17] Analyzing 329 Unisim elements for replacement
@@ -2981,10 +2909,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 30 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-325 Infos, 168 Warnings, 0 Critical Warnings and 0 Errors encountered.
+245 Infos, 168 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:00 ; elapsed = 00:02:22 . Memory (MB): peak = 986.566 ; gain = 392.676 ; free physical = 253 ; free virtual = 0
+synth_design: Time (s): cpu = 00:00:00 ; elapsed = 00:02:27 . Memory (MB): peak = 1011.637 ; gain = 417.762 ; free physical = 82 ; free virtual = 0
 # write_checkpoint -noxdef design_1_wrapper.dcp
 # catch { report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb }
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.07 . Memory (MB): peak = 986.566 ; gain = 0.000 ; free physical = 252 ; free virtual = 0
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  7 15:05:28 2015...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1011.637 ; gain = 0.000 ; free physical = 89 ; free virtual = 0
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  9 13:14:01 2015...

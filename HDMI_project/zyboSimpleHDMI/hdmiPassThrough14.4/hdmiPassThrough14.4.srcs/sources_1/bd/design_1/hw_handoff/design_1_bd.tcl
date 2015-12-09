@@ -243,19 +243,15 @@ CONFIG.PCW_USE_M_AXI_GP0 {0} CONFIG.preset {Default*} \
 
   # Create instance: xlconstant_1, and set properties
   set xlconstant_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 ]
-  set_property -dict [ list CONFIG.CONST_VAL {512} CONFIG.CONST_WIDTH {10}  ] $xlconstant_1
+  set_property -dict [ list CONFIG.CONST_VAL {50} CONFIG.CONST_WIDTH {10}  ] $xlconstant_1
 
   # Create instance: xlconstant_2, and set properties
   set xlconstant_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2 ]
-  set_property -dict [ list CONFIG.CONST_VAL {23331319} CONFIG.CONST_WIDTH {27}  ] $xlconstant_2
+  set_property -dict [ list CONFIG.CONST_VAL {117900737} CONFIG.CONST_WIDTH {27}  ] $xlconstant_2
 
   # Create instance: xlconstant_3, and set properties
   set xlconstant_3 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_3 ]
-  set_property -dict [ list CONFIG.CONST_VAL {18680903} CONFIG.CONST_WIDTH {27}  ] $xlconstant_3
-
-  # Create instance: xlconstant_4, and set properties
-  set xlconstant_4 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_4 ]
-  set_property -dict [ list CONFIG.CONST_VAL {2750} CONFIG.CONST_WIDTH {10}  ] $xlconstant_4
+  set_property -dict [ list CONFIG.CONST_VAL {117900737} CONFIG.CONST_WIDTH {27}  ] $xlconstant_3
 
   # Create instance: xlconstant_5, and set properties
   set xlconstant_5 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_5 ]
@@ -287,7 +283,6 @@ CONFIG.PCW_USE_M_AXI_GP0 {0} CONFIG.preset {Default*} \
   connect_bd_net -net xlconstant_1_dout [get_bd_pins sobel9_0/threshold_in] [get_bd_pins xlconstant_1/dout]
   connect_bd_net -net xlconstant_2_dout [get_bd_pins sobel9_0/mask1_in] [get_bd_pins xlconstant_2/dout]
   connect_bd_net -net xlconstant_3_dout [get_bd_pins sobel9_0/mask2_in] [get_bd_pins xlconstant_3/dout]
-  connect_bd_net -net xlconstant_4_dout [get_bd_pins sobel9_0/delay] [get_bd_pins xlconstant_4/dout]
   connect_bd_net -net xlconstant_5_dout [get_bd_pins sobel9_0/rst] [get_bd_pins xlconstant_5/dout]
 
   # Create address segments

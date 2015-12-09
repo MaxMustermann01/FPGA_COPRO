@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Dec  7 15:02:50 2015" VIVADOVERSION="2014.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Dec  9 13:11:15 2015" VIVADOVERSION="2014.4">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="design_1_imp" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -60,12 +60,12 @@
         <CONNECTION INSTANCE="hdmi_rx_0" PORT="HDMI_HPD"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="4" NAME="VGA_R" RIGHT="0" SIGIS="undef" SIGNAME="sobel9_0_rb_data_out">
+    <PORT DIR="O" LEFT="4" NAME="VGA_B" RIGHT="0" SIGIS="undef" SIGNAME="sobel9_0_rb_data_out">
       <CONNECTIONS>
         <CONNECTION INSTANCE="sobel9_0" PORT="rb_data_out"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="4" NAME="VGA_B" RIGHT="0" SIGIS="undef" SIGNAME="sobel9_0_rb_data_out">
+    <PORT DIR="O" LEFT="4" NAME="VGA_R" RIGHT="0" SIGIS="undef" SIGNAME="sobel9_0_rb_data_out">
       <CONNECTIONS>
         <CONNECTION INSTANCE="sobel9_0" PORT="rb_data_out"/>
       </CONNECTIONS>
@@ -184,6 +184,7 @@
     <MODULE FULLNAME="/sobel9_0" HWVERSION="1.0" INSTANCE="sobel9_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sobel9" VLNV="user.org:user:sobel9:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
+        <PARAMETER NAME="DELAY" VALUE="2750"/>
         <PARAMETER NAME="Component_Name" VALUE="design_1_sobel9_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
@@ -220,8 +221,8 @@
         </PORT>
         <PORT DIR="O" LEFT="4" NAME="rb_data_out" RIGHT="0" SIGIS="undef" SIGNAME="sobel9_0_rb_data_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="VGA_B"/>
             <CONNECTION INSTANCE="External_Ports" PORT="VGA_R"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="VGA_B"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="5" NAME="g_data_out" RIGHT="0" SIGIS="undef" SIGNAME="sobel9_0_g_data_out">
@@ -255,11 +256,6 @@
             <CONNECTION INSTANCE="xlconstant_3" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="9" NAME="delay" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_4_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconstant_4" PORT="dout"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" NAME="ready" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
@@ -285,7 +281,7 @@
     <MODULE FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="1000000000"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0000110010"/>
         <PARAMETER NAME="CONST_WIDTH" VALUE="10"/>
         <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_1_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
@@ -302,7 +298,7 @@
     <MODULE FULLNAME="/xlconstant_2" HWVERSION="1.1" INSTANCE="xlconstant_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="001011001000000000111110111"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="111000001110000010111000001"/>
         <PARAMETER NAME="CONST_WIDTH" VALUE="27"/>
         <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_2_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
@@ -319,7 +315,7 @@
     <MODULE FULLNAME="/xlconstant_3" HWVERSION="1.1" INSTANCE="xlconstant_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="001000111010000110001000111"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="111000001110000010111000001"/>
         <PARAMETER NAME="CONST_WIDTH" VALUE="27"/>
         <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_3_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
@@ -328,23 +324,6 @@
         <PORT DIR="O" LEFT="26" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_3_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="sobel9_0" PORT="mask2_in"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE FULLNAME="/xlconstant_4" HWVERSION="1.1" INSTANCE="xlconstant_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="1010111110"/>
-        <PARAMETER NAME="CONST_WIDTH" VALUE="10"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_4_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="O" LEFT="9" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_4_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="sobel9_0" PORT="delay"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

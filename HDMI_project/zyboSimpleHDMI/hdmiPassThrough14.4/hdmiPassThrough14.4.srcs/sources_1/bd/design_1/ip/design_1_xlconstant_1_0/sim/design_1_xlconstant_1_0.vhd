@@ -48,7 +48,7 @@ ARCHITECTURE design_1_xlconstant_1_0_arch OF design_1_xlconstant_1_0 IS
 BEGIN
   U0 : xlconstant
     GENERIC MAP (
-      CONST_VAL => "1000000000",
+      CONST_VAL => "0000110010",
       CONST_WIDTH => 10
     )
     PORT MAP (

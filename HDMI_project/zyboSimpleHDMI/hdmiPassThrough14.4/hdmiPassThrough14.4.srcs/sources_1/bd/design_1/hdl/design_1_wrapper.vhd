@@ -1,7 +1,7 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.4 (lin32) Build 1071353 Tue Nov 18 16:37:30 MST 2014
---Date        : Mon Dec  7 15:02:52 2015
+--Date        : Wed Dec  9 13:11:17 2015
 --Host        : localhost.localdomain running 32-bit unknown
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -80,8 +80,8 @@ architecture STRUCTURE of design_1_wrapper is
     HDMI_D_N : in STD_LOGIC_VECTOR ( 2 downto 0 );
     HDMI_OUT_EN : out STD_LOGIC;
     HDMI_HPD : out STD_LOGIC;
-    VGA_R : out STD_LOGIC_VECTOR ( 4 downto 0 );
     VGA_B : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    VGA_R : out STD_LOGIC_VECTOR ( 4 downto 0 );
     VGA_HS : out STD_LOGIC;
     VGA_VS : out STD_LOGIC;
     VGA_G : out STD_LOGIC_VECTOR ( 5 downto 0 )

@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.4 (lin32) Build 1071353 Tue Nov 18 16:37:30 MST 2014
-| Date             : Mon Dec  7 15:06:49 2015
+| Date             : Wed Dec  9 13:15:26 2015
 | Host             : localhost.localdomain running 32-bit unknown
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb
 | Design           : design_1_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.742 |
-| Dynamic (W)              | 1.608 |
+| Total On-Chip Power (W)  | 1.740 |
+| Dynamic (W)              | 1.606 |
 | Device Static (W)        | 0.134 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 64.9  |
@@ -50,19 +50,20 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.003 |        7 |       --- |             --- |
-| Slice Logic              |    <0.001 |     1907 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |      685 |     17600 |            3.89 |
-|   CARRY4                 |    <0.001 |      100 |      4400 |            2.27 |
-|   Register               |    <0.001 |      717 |     35200 |            2.03 |
+| Slice Logic              |    <0.001 |     2116 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |      722 |     17600 |            4.10 |
+|   CARRY4                 |    <0.001 |      113 |      4400 |            2.56 |
+|   Register               |    <0.001 |      734 |     35200 |            2.08 |
 |   LUT as Distributed RAM |    <0.001 |       30 |      6000 |            0.50 |
-|   Others                 |    <0.001 |      292 |       --- |             --- |
-| Signals                  |    <0.001 |     1163 |       --- |             --- |
+|   Others                 |    <0.001 |      244 |       --- |             --- |
+|   LUT as Shift Register  |     0.000 |      172 |      6000 |            2.86 |
+| Signals                  |    <0.001 |     1320 |       --- |             --- |
 | Block RAM                |    <0.001 |        1 |        60 |            1.66 |
 | MMCM                     |     0.000 |        1 |         2 |           50.00 |
-| I/O                      |     0.049 |       29 |       100 |           29.00 |
+| I/O                      |     0.046 |       29 |       100 |           29.00 |
 | PS7                      |     1.554 |        1 |       --- |             --- |
 | Static Power             |     0.134 |          |           |                 |
-| Total                    |     1.742 |          |           |                 |
+| Total                    |     1.740 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.013 |       0.006 |      0.007 |
+| Vccint    |       1.000 |     0.014 |       0.007 |      0.007 |
 | Vccaux    |       1.800 |     0.029 |       0.017 |      0.012 |
-| Vcco33    |       3.300 |     0.006 |       0.005 |      0.001 |
+| Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
 | Vcco15    |       1.500 |     0.001 |       0.000 |      0.001 |
@@ -152,8 +153,8 @@ Table of Contents
 +-------------------------------------------------------+-----------+
 | Name                                                  | Power (W) |
 +-------------------------------------------------------+-----------+
-| design_1_wrapper                                      |     1.608 |
-|   design_1_i                                          |     1.590 |
+| design_1_wrapper                                      |     1.606 |
+|   design_1_i                                          |     1.591 |
 |     hdmi_rx_0                                         |     0.033 |
 |       U0                                              |     0.033 |
 |         BlueDecoder                                   |     0.010 |
@@ -168,6 +169,7 @@ Table of Contents
 |               dram16s[6].RAM32X1D_inst                |    <0.001 |
 |               dram16s[7].RAM32X1D_inst                |    <0.001 |
 |               dram16s[8].RAM32X1D_inst                |    <0.001 |
+|               dram16s[9].RAM32X1D_inst                |    <0.001 |
 |           IBuffs                                      |     0.010 |
 |           PhaseAlignment                              |    <0.001 |
 |         GreenDecoder                                  |     0.010 |
@@ -201,8 +203,8 @@ Table of Contents
 |           PhaseAlignment                              |    <0.001 |
 |     processing_system7_0                              |     1.554 |
 |       inst                                            |     1.554 |
-|     sobel9_0                                          |     0.002 |
-|       U0                                              |     0.002 |
+|     sobel9_0                                          |     0.003 |
+|       U0                                              |     0.003 |
 |         fifo1                                         |    <0.001 |
 |           U0                                          |    <0.001 |
 |             inst_fifo_gen                             |    <0.001 |
@@ -252,7 +254,7 @@ Table of Contents
 |                               prim_noinit.ram         |    <0.001 |
 |                   rstblk                              |    <0.001 |
 |         rst_dalay_cnt                                 |    <0.001 |
-|         sobel                                         |    <0.001 |
+|         sobel                                         |     0.001 |
 |         stage1_cnt                                    |    <0.001 |
 |         stage2_cnt                                    |    <0.001 |
 |     xlconstant_5                                      |     0.000 |
