@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4
+# SW Build 1071353 on Tue Nov 18 16:37:30 MST 2014
+# 
+# Start of session at: Mon Dec 14 18:21:26 2015
+# Process ID: 3183
+# Log file: /home/fel/Vivado_Projects/wSumIntegration/wSumIntegration.sdk/webtalk/webtalk.log
+# Journal file: /home/fel/Vivado_Projects/wSumIntegration/wSumIntegration.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
